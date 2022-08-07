@@ -2,30 +2,42 @@ import React from 'react'
 
 export default function DeanMessage() {
     return (
-        // TODO: adjust the responsiveness to the other components
-        <div className="px-16 py-8 my-7">
-            <div className="container mx-auto font-Josefin">
-                <div className="flex flex-col gap-x-10 items-center md:items-start md:flex-row md:justify-evenly">
-                    <div className="w-full min-w-[250px] max-w-[350px] xl:max-w-md mx-auto mb-14 h-96 bg-slate-100 rounded-lg md:mx-0 lg:w-7/12 xl:-ml-10 "></div>
-                    <div className="w-full lg:w-7/12 max-w-lg xl:max-w-xl md:pr-10">
-                        <h3 className="mb-6 font-semibold text-center text-lg sm:text-xl md:text-left md:text-2xl lg:mb-8 lg:text-3xl">
-                            A Message from Our Dean
-                        </h3>
-                        <p className="min-w-[250px] font-normal text-md md:text-lg lg:text-xl text-justify md:indent-7">
+        // TODO: add animation
+        <div className="px-8 my-20 sm:px-12 md:px-16">
+            <div className="container flex flex-col-reverse md:flex-row mx-auto font-Josefin lg:justify-between">
+                <div className="px-4 md:mx-0 md:px-0 md:w-6/12 xl:w-7/12 sm:max-w-2xl 2xl:max-w-4xl">
+                    <h2 className="mb-8 font-semibold text-center text-2xl md:text-left lg:mb-14 lg:text-3xl xl:text-4xl">
+                        A Message from Our Dean
+                    </h2>
+                    <div className="text-justify text-lg font-light line-height-7 indent-7 lg:text-xl xl:text-2xl">
+                        <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Facere eius nostrum obcaecati architecto
-                            voluptatibus soluta, ea quod incidunt voluptas, id
-                            iure expedita repudiandae reprehenderit cupiditate!
-                            Deleniti dignissimos ad quis sequi facere similique,
-                            dolorum quas! Deleniti repudiandae vero quidem hic,
-                            molestiae dicta perspiciatis sit odio porro
-                            assumenda fuga repellat harum accusantium saepe
-                            nostrum consequatur blanditiis reprehenderit
-                            excepturi minima reiciendis quia! Recusandae
-                            accusamus consequatur ut alias laboriosam itaque
-                            officiis perspiciatis beatae mollitia.
+                            elit. Esse sit totam doloribus quidem recusandae
+                            nesciunt? Ex ipsa architecto aliquam consequatur
+                            saepe enim officiis illo debitis laboriosam error
+                            vero facere sunt, provident modi ipsam deserunt
+                            voluptas molestiae! Magni iste delectus soluta esse
+                            libero blanditiis, minus ut voluptas, rerum autem
+                            aliquam consequuntur.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Impedit ut consectetur dolores repellat esse?
+                            Illum incidunt blanditiis adipisci repellat, dolore
+                            tempore repudiandae doloribus ipsam vitae impedit
+                            eius numquam perferendis doloremque quas, placeat
+                            facere hic velit! Dicta assumenda soluta explicabo
+                            sed expedita magni numquam illum iure autem! Non
+                            numquam quod cupiditate?
                         </p>
                     </div>
+                </div>
+                <div className="mx-auto mb-10 md:ml-10 md:mr-0 lg:ml-20md:mb-0 md:w-6/12 xl:w-6/12 xl:mx-20 max-w-[450px]">
+                    <img
+                        alt="dean of DTETI"
+                        src="https://picsum.photos/500/500"
+                        className="rounded-3xl mx-auto md:mx-0"
+                    />
                 </div>
             </div>
         </div>
