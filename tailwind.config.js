@@ -31,5 +31,16 @@ module.exports = {
       }
     },
   },
+  safelist: [
+		{
+			pattern:
+				/(bg|text|border|ring|outline)-(yellow|blue|orange|green|teal|purple)-(50|100|200|300|400|500|600|700|800|900)/,
+			variants: ['active', 'hover', 'disabled', 'focus']
+		},
+		{
+			pattern: /(bg|text|border|ring|outline)-(shades)-(0|100)/,
+			variants: ['active', 'hover', 'disabled', 'focus']
+		}
+	],
   plugins: [],
 }
