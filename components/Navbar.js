@@ -35,7 +35,7 @@ function Navbar() {
                         </div>
                         <div className="w-3/12 text-center">
                             <Link href={`/${page}`}>
-                                <a className="border-2 border-blue-500 text-blue-500 py-2 px-10 rounded-full text-bold">{page == "faq" ? " FAQ " : "Home"}</a>
+                                <a className="border-2 border-blue-500 text-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white rounded-full text-bold">{page == "faq" ? " FAQ " : "Home"}</a>
                             </Link>
                         </div>
                     </div>

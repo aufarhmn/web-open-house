@@ -30,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# ignore firebase API for now
+firebase
