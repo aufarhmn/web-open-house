@@ -6,6 +6,7 @@ import BackToTop from '../components/BackToTop'
 export default function Home() {
     return (
         <>
+            {/* Form belum diexport */}
             <Navbar />
             <Hero />
             <DeanMessage />

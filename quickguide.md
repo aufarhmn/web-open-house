@@ -4,4 +4,4 @@
 4. Nambahin component bisa ditaruh di folder 'components'
 5. Jangan lupa di import di file index.js
 6. Buat AOS dah diimport, kalo make tinggal dipanggil 'data-aos='namaAnimasi' contoh 'data-aos='fade-up''
-7. tes push kod
+7. firebase API di .env.local, nanti lebih baik di hardcode aja di firebase.js
