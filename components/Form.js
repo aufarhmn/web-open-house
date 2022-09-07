@@ -1,15 +1,17 @@
+import { addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { db } from "../firebase/firebase.js";
 
 const Form = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
+    const dbReff = collection(db, "form-data");
 
     const handleSubmit = (e) => {
         // TODO: Fix data to be sent to firebase
         e.preventDefault();
         
-        db.collection("form-data").add({
+        addDoc(dbReff, {
             name: name,
             email: email,
         })
