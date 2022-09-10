@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import NavItems from "./NavItems";
+import React, { useEffect, useState } from "react"
+import NavItems from "./NavItems"
 import Link from 'next/link'
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"
 
 
 function Navbar() {
@@ -33,7 +33,7 @@ function Navbar() {
                                 <NavItems>Departement</NavItems>
                             </ul>
                         </div>
-                        <div className="w-3/12 text-center">
+                        <div className="w-3/12 text-right">
                             <Link href={`/${page}`}>
                                 <a className="border-2 border-blue-500 text-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white rounded-full text-bold">{page == "faq" ? " FAQ " : "Home"}</a>
                             </Link>
