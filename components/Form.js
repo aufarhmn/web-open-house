@@ -10,27 +10,35 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
         addDoc(dbReff, {
             name: name,
             email: email,
             day: day,
         })
         .then(() => {
-            alert("Your message has been submitted");
+            window.alert("Your message has been submitted");
         })
         .catch((error) => {
-            alert(error.message);
+            console.log(error.message);
         });
 
         setName("");
         setEmail("");
+        setDay("");
     };
 
+    // const testSubmit = () =>{
+    //    console.log("test")
+    //     // return(
+    //     //     <div className="fixed w-4/5 bg-green-400 h-6 p-auto top-0 mx-auto">
+    //     //        <span>Success!</span> Data anda telah masuk
+    //     //     </div>
+    //     // );
+    // }
+
     return (
-        // TODO: benerin formnya cuy ini jelek bgt wkwk
-        <div className="columns-2 bg-blue-500 h-screen">
-            <div className="bg-grey-400 h-screen">
+        <div className="lg:columns-2 bg-blue-500 h-screen ">
+            <div className="bg-grey-400 h-screen hidden lg:flex">
                
             </div>
             <div id=" " className="h-screen p-20">
@@ -43,7 +51,8 @@ const Form = () => {
                 <form onSubmit={ handleSubmit }>
                     <div className="">
                         <input 
-                            className="w-full p-8 mt-11 rounded-xl h-14 text-xl text-grey-100"
+                            name="nama"
+                            className="w-full p-8 mt-11 rounded-xl h-14 text-xl"
                             placeholder="Your Name" 
                             value={name} 
                             onChange={(e) => setName(e.target.value)}
@@ -52,15 +61,18 @@ const Form = () => {
                     </div>
                     <div className="">
                         <input 
-                            className="w-full p-8 mt-7 rounded-xl h-14 text-xl text-grey-100"
+                            name="email"
+                            className="w-full p-8 mt-7 rounded-xl h-14 text-xl"
                             placeholder="yourmailaddressplease@mail.com" 
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)}
                             required
+                            type="email"
                         />
                     </div>
                     <div>
                         <select 
+                            name="day"
                             className="w-full p-2 pl-8 mt-7 rounded-xl h-14 text-xl"
                             value={day} 
                             onChange={(e) => setDay(e.target.value)}
