@@ -11,6 +11,8 @@ module.exports = {
     extend: {
       fontFamily: {
         "Josefin": ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+        "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
+        "Montserrat": ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       "colors": {
         "blue": {
