@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import NavItems from "./NavItems"
 import Link from 'next/link'
-import { useRouter } from "next/router"
-
 
 function Navbar() {
-
-    const [page, setPage] = useState("faq")
-    const router = useRouter()
-
-    useEffect(() => {
-        if(router.pathname != "/"){
-            setPage("")
-        }
-        else{
-            setPage("faq")
-        }
-    })
-
     return (
         // TODO: Responsive (Breakpoint pakai hamburger icon) + Fixed Content
         <>
@@ -34,8 +19,8 @@ function Navbar() {
                             </ul>
                         </div>
                         <div className="w-3/12 text-right">
-                            <Link href={`/${page}`}>
-                                <a className="border-2 border-blue-500 text-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white rounded-full text-bold">{page == "faq" ? " FAQ " : "Home"}</a>
+                            <Link href="/faq">
+                                <a className="border-2 border-blue-500 text-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white rounded-full text-bold">FAQ</a>
                             </Link>
                         </div>
                     </div>

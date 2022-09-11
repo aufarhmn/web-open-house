@@ -1,16 +1,7 @@
 import React from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase/firebase.js";
 
 const styleQ = "w-full px-[24px] py-[25px] rounded bg-grey-100 font-Josefin font-bold text-xl"
 const styleA = "font-Josefin font-light text-xl pb-10"
-
-//TODO: map the data from firebase to the component
-const colRef = collection(db, "faq-details");
-const docsSnap = await getDocs(colRef);
-docsSnap.forEach(doc => {
-    console.log(doc.data());
-})
 
 export default function DaftarFAQ () {
     return (
