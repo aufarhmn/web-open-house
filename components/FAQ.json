@@ -1,0 +1,29 @@
+{
+    "faq" : 
+    [
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        },
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        }, 
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        },
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        },
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        },
+        {
+            "ask" : "Q. What is the name of department",
+            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+        }
+    ]
+}

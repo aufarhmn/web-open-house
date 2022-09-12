@@ -7,6 +7,7 @@ import OHEvents from "../components/OHEvents";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
 import About from "../components/About";
+import Form from '../components/Form'
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Location />
             <DeanMessage />
             <SubEvents />
+            <Form/>
             <Footer />
             <BackToTop />
         </>
