@@ -1,45 +1,64 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Keyboard, Navigation, Pagination } from 'swiper'
 
+import 'swiper/css'
+import BtnPrev from './BtnPrev'
+import BtnNext from './BtnNext'
+
+// TODO: Responsiveness, change navigation to pagination when in small screen
 export default function DeanMessage() {
-    return (
-        // TODO: add animation
-        <div className="px-8 my-20 sm:px-12 md:px-16">
-            <div className="container flex flex-col-reverse md:flex-row mx-auto font-Josefin lg:justify-between">
-                <div className="px-4 md:mx-0 md:px-0 md:w-6/12 xl:w-7/12 sm:max-w-2xl 2xl:max-w-4xl">
-                    <h2 className="mb-8 font-semibold text-center text-2xl md:text-left lg:mb-14 lg:text-3xl xl:text-4xl">
-                        A Message from Our Dean
-                    </h2>
-                    <div className="text-justify text-lg font-light line-height-7 indent-7 lg:text-xl xl:text-2xl">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Esse sit totam doloribus quidem recusandae
-                            nesciunt? Ex ipsa architecto aliquam consequatur
-                            saepe enim officiis illo debitis laboriosam error
-                            vero facere sunt, provident modi ipsam deserunt
-                            voluptas molestiae! Magni iste delectus soluta esse
-                            libero blanditiis, minus ut voluptas, rerum autem
-                            aliquam consequuntur.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Impedit ut consectetur dolores repellat esse?
-                            Illum incidunt blanditiis adipisci repellat, dolore
-                            tempore repudiandae doloribus ipsam vitae impedit
-                            eius numquam perferendis doloremque quas, placeat
-                            facere hic velit! Dicta assumenda soluta explicabo
-                            sed expedita magni numquam illum iure autem! Non
-                            numquam quod cupiditate?
-                        </p>
-                    </div>
-                </div>
-                <div className="mx-auto mb-10 md:ml-10 md:mr-0 lg:ml-20md:mb-0 md:w-6/12 xl:w-6/12 xl:mx-20 max-w-[450px]">
-                    <img
-                        alt="dean of DTETI"
-                        src="https://picsum.photos/500/500"
-                        className="rounded-3xl mx-auto md:mx-0"
-                    />
-                </div>
+  const nextRef = useRef(null)
+  const prevRef = useRef(null)
+  const [index, setIndex] = useState(0)
+  const [width, setWidth] = useState(null)
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setWidth(window.innerWidth)
+    })
+    console.log(width)
+  }, [width])
+
+  const isSmall = width < 950
+
+  return (
+    <Swiper
+      modules={[Keyboard, Pagination, Navigation]}
+      slidesPerView={1}
+      keyboard={{ enabled: true }}
+      onInit={(swiper) => {
+        swiper.params.navigation.prevEl = prevRef.current
+        swiper.params.navigation.nextEl = nextRef.current
+        swiper.navigation.init()
+        swiper.navigation.update()
+      }}
+      spaceBetween={20}
+      onSlideChange={({ activeIndex }) => setIndex(activeIndex)}
+      className="relative max-w-5xl my-20"
+    >
+      {[1, 2, 3, 4].map((n) => {
+        return (
+          <SwiperSlide key={n} className="py-2 px-2">
+            <div className="mr-7 ml-10 xl:mx-auto flex justify-center outline-8 outline outline-[#2FA4FF] py-10 rounded-[40px]">
+              <div className=" max-w-sm sm:max-w-lg md:max-w-2xl text-center font-Poppins cursor-grab">
+                <h2 className="text-4xl font-semibold text-[#554E4E] font-Josefin">
+                  A Message from Our Dean
+                </h2>
+                <div className="bg-red-500 w-16 h-16 mx-auto my-10"></div>
+                <p className="text-xl md:text-2xl text-[#676666]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                  veniam cum architecto porro repellendus illum ducimus delectus
+                  totam? Quia voluptatum recusandae possimus neque iste nobis
+                  cumque sunt voluptates! Incidunt, accusamus!
+                </p>
+              </div>
             </div>
-        </div>
-    )
+          </SwiperSlide>
+        )
+      })}
+      <button ref={nextRef}>{index !== 3 && <BtnNext />}</button>
+      <button ref={prevRef}>{index !== 0 && <BtnPrev />}</button>
+    </Swiper>
+  )
 }
