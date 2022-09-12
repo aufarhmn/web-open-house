@@ -6,7 +6,7 @@ function NavbarSimplified() {
     return (
         // TODO: Responsive (Breakpoint pakai hamburger icon) + Fixed Content
         <>
-            <div className="px-16 py-8 bg-white">
+            <div className="px-16 py-8 bg-white border-b-4">
                 <div className="container mx-auto font-Josefin">
                     <div className="flex items-center">
                         <div className="w-6/12 text-3xl font-semibold">

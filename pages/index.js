@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import DeanMessage from "../components/DeanMessage";
-import SubEvents from "../components/SubEvents";
+// import SubEvents from "../components/SubEvents";
 import BackToTop from "../components/BackToTop";
 import OHEvents from "../components/OHEvents";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ export default function Home() {
             <OHEvents />
             <Location />
             <DeanMessage />
-            <SubEvents />
+            {/* <SubEvents /> */}
             <Form/>
             <Footer />
             <BackToTop />
