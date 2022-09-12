@@ -6,6 +6,7 @@ import BackToTop from "../components/BackToTop";
 import OHEvents from "../components/OHEvents";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
+import About from '../components/About'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             {/* Form belum diexport */}
             <Navbar />
             <Hero />
+            <About />
             <OHEvents />
             <Location />
             <DeanMessage />
@@ -21,4 +23,3 @@ export default function Home() {
             <BackToTop />
         </>
     );
-}
