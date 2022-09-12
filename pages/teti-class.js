@@ -1,4 +1,8 @@
+import Benefits from "../components/Benefits";
 import Navbar from "../components/Navbar";
+import Speaker from "../components/Speaker";
+import pakAdha from '../Assets/Images/Speaker/pakAdha.png'
+
 
 export default function TETIClass() {
     return(
@@ -20,6 +24,8 @@ export default function TETIClass() {
                     <p className="w-[90%]">Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.</p>
                 </div>
             </div>
+            <Benefits />
+            <Speaker photo={pakAdha}/>
         </>
     )
 }
