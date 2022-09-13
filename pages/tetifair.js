@@ -4,7 +4,7 @@ import Title from "../components/TetiFair/Title";
 import NavbarSimplified from "../components/NavbarSimplified";
 import StandFor from "../components/TetiFair/standFor";
 
-export default function TetiFair() {
+export default function TETIFair() {
     return (
         <>
             <NavbarSimplified />

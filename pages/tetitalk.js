@@ -2,9 +2,11 @@ import Head from "next/head";
 import NavbarSimplified from "../components/NavbarSimplified";
 import Benefits from "../components/Benefits";
 import { SpeakerCard } from "../components/TetiTalk/SpeakerCard";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 
 
-export default function Tetitalk() {
+export default function TETITalk() {
   //TODO: Benefits Section, Speaker Section, Responsiveness, Footer, Navbar
 
   const speakers = [
@@ -75,6 +77,8 @@ export default function Tetitalk() {
           ))}
         </div>
       </main>
+      <Footer />
+      <BackToTop />
     </>
   );
 }
