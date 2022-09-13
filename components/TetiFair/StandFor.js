@@ -18,15 +18,17 @@ export default function StandFor() {
                 <h3 className="text-[41px] font-bold text-black-100 text-left">
                      What's TETITB Stand for
                 </h3>
-                <div className="flex items-start justify-between lg:flex-row gap-10 xl:gap-x-[62px] text-black-100 text-center">
-                    <div className={styleCircle} style={shadowCircle}>
-                         <div className={styleCircleInner} style={shadowCircleInner}>
-                            <img
-                                src="/Assets/Images/TetiFair/Vector 4.svg"
-                                className={styleImg}
-                            />
+                <div className="flex items-start justify-between lg:flex-row gap-x-10 xl:gap-x-[62px] text-black-100 text-center">
+                    <div>
+                        <div className={styleCircle} style={shadowCircle}>
+                            <div className={styleCircleInner} style={shadowCircleInner}>
+                                <img
+                                    src="/Assets/Images/TetiFair/Vector 4.svg"
+                                    className={styleImg}
+                                />
+                            </div>
                         </div>
-                        <h4 className="font-bold text-[19px]">
+                        <h4 className="font-bold text-[19px] mb-10">
                             Electrical Engineering
                         </h4>
                         <p className="text-[17px]">
