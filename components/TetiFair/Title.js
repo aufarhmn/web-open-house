@@ -4,7 +4,7 @@ export default function Title() {
     return (
         // TODO: Responsive, padding (px)
         <div className="w-full h-full px-16 py-[120px]">
-            <div className="grid container mx-auto space-y-16 font-Poppins text-center">
+            <div className="grid container mx-auto space-y-16 font-Poppins">
                 <div className="grid justify-items-start space-y-[100px] lg:space-y-[200px]">
                     <h1 className="font-Josefin text-[134px] font-bold text-blue-25">
                         TETI Fair
