@@ -11,19 +11,18 @@ const shadow = {
 
 export default function Speaker(props) {
     return(
-        <div className="w-[80%] flex flex-col mx-auto my-72">
-                <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">Lectured by</h3>
-                <div className="flex justify-between my-3">
+        
+                <div className="w-[30%]flex justify-between my-3">
                     <div className={benefitsStyle} style={shadow}>
                         <div className={imgStyle}>
                             <Image src={props.photo} alt="advantage1" />
                         </div>
                         <div className="h-[35%] w-[80%] flex flex-col justify-center">
-                            <p className="font-Josefin text-[26px] text-[#434343] font-bold">Sarah Doe</p>
-                            <p className="font-Josefin text-[26px] text-[#434343]">Dosen DTETI</p>
+                            <p className="font-Josefin text-[26px] text-[#434343] font-bold">{props.name}</p>
+                            <p className="font-Josefin text-[26px] text-[#434343]">{props.job}</p>
                         </div>
                     </div>
                 </div>
-            </div>
+
     )
 }
