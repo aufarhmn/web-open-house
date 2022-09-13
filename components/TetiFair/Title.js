@@ -19,7 +19,7 @@ export default function Title() {
                                 </p>
                             </h2>
                         </div>
-                        <p className="text-justify text-[30px] lg:w-full xl:">
+                        <p className="text-justify text-[30px] lg:w-full">
                             Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi 
                             mulai dari program studinya sampai kegiatan kemahasiswaan. Para siswa akan di kenalakan secara lebih 
                             mendalam tentang dunia perkuliahan, program studi yang ditawarkan, dan hal apa saja yang diperlukan 
