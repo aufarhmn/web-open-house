@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+//TODO: responsive
 export const SpeakerCard = (props) => {
   const benefitsStyle =
     "bg-[#F3F3F3] rounded-[28px] w-[430px] h-[592px] flex flex-col items-center ";
