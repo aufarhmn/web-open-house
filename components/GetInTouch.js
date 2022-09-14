@@ -24,37 +24,42 @@ const GetInTouch = () => {
     setName("");
     setEmail("");
   };
+const shadowInput = {
+  boxShadow: "inset 7.66376px 7.66376px 15.3275px rgba(0, 0, 0, 0.09)"
+}
+const shadowSubmit = {
+  boxShadow: "inset 1px -1px 17px rgba(0, 0, 0, 0.25)"
+}
 
   return (
     // TODO: benerin formnya cuy ini jelek bgt wkwk
-    <div className="w-full h-full bg-white mt-12 mb-12">
+    <div className="w-full h-full bg-white px-16 py-20">
       <div className="grid container mx-auto text-center font-Montserrat font-bold text-[45px]">
-            <h1> Missing Something from Us? </h1>
-      </div>
-      <div className="font-Montserrat text-center pt-8 text-[27px] pb-12">
-            <h3> Our Team are happy to help :D </h3>
-      </div>
-
-      <div className="bg-grey">
-        <form onSubmit={handleSubmit}>
-          <div className="">
-          <input
-            className="w-4/12 p-8 rounded-xl h-8 text-l px-1"
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-
-          <input
-            className="w-4/12 p-8 rounded-xl h-8 text-l px-1"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <button className="w-4/12" type="submit"> Get In Touch! </button>
-          </div>
-        </form>
+        <h1>Missing Something from Us?</h1>
+        <div className="font-normal text-center pt-8 text-[27px] pb-12">
+              <h3> Our Team are happy to help :D </h3>
+        </div>
+        <div className="w-full flex justify-center">
+          <form onSubmit={handleSubmit}>
+            <div className="w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
+              <input
+                className="p-8 rounded-xl h-8 text-xl text-black px-8 bg-[#E8E8E8]"
+                style={shadowInput}
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                className="p-8 rounded-xl h-8 text-xl text-black px-8 bg-[#E8E8E8]"
+                style={shadowInput}
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button className="text-xl py-5 lg:py-0 px-5 lg:px-10 rounded-xl bg-[#E8E8E8] text-xl text-green-300" type="submit" style={shadowSubmit}> Get In Touch! </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
