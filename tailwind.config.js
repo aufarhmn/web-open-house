@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '425px',
+      },
       fontFamily: {
         "Josefin": ["Josefin Sans", ...defaultTheme.fontFamily.sans],
         "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
