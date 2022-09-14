@@ -11,8 +11,8 @@ function Navbar() {
             <div className="w-3/12 text-3xl font-semibold">Open House.</div>
             <div className="w-6/12">
               <ul className="flex justify-center space-x-10">
-                    <li><a href="#events" className="font-light text-l py-4">Events</a></li>
-                    <li><a href="#about" className="font-light text-l py-4">Departement</a></li>
+                    <li><a href="#events" className="font-l text-bold text-l py-4">Events</a></li>
+                    <li><a href="#about" className="font-l text-bold text-l py-4">Departement</a></li>
               </ul>
             </div>
             <div className="w-3/12 text-right">
