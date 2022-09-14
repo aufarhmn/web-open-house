@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavbarSimplified from "../components/NavbarSimplified";
-import Benefits from "../components/Benefits";
+import Benefits from "../components/TetiClass/Benefits";
 import { SpeakerCard } from "../components/TetiTalk/SpeakerCard";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
