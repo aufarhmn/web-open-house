@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AiOutlineInstagram, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Location() {
     return (
@@ -26,6 +27,11 @@ export default function Location() {
                     {/* <div className="cursor-pointer text-black hover:text-[#93DDD4] transition duration-200 ease-in-out">
                         <AiOutlineTwitter />
                     </div> */}
+                    <div className="cursor-pointer text-black hover:text-[#93DDD4] transition duration-200 ease-in-out">
+                        <Link href="https://www.tiktok.com/@openhouseteti">
+                            <FaTiktok />
+                        </Link>
+                    </div>
                     <div className="cursor-pointer text-black hover:text-[#93DDD4] transition duration-200 ease-in-out">
                         <Link href="https://www.youtube.com/channel/UCVR1e_ufQ4-ZjJDoJpQgA2A">
                             <AiFillYoutube />
