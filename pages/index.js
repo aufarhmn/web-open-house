@@ -7,10 +7,14 @@ import Footer from "../components/Footer";
 import Location from "../components/Location";
 import About from "../components/About";
 import Form from '../components/Form'
+import Head from "next/head";
 
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Open House DTETI</title>
+            </Head>
             <Navbar />
             <Hero />
             <About />

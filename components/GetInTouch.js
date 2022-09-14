@@ -60,6 +60,7 @@ const shadowSubmit = {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                type="email"
               />
             </div>
             <div className="mt-8 w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
@@ -67,8 +68,8 @@ const shadowSubmit = {
                 className="w-full p-8 rounded-xl text-xl text-black px-8 bg-[#E8E8E8]"
                 style={shadowInput}
                 placeholder="Message"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               />
             </div>

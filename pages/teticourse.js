@@ -2,10 +2,14 @@ import Footer from "../components/Footer";
 import NavbarSimplified from "../components/NavbarSimplified";
 import BackToTop from "../components/BackToTop";
 import GetInTouch from "../components/GetInTouch";
+import Head from "next/head";
 
 export default function TETICourse() {
     return (
         <>
+            <Head>
+                <title>TETI Course</title>
+            </Head>
             <NavbarSimplified />
             <div className="my-[120px] mx-[100px] ">
                 <h1 className="text-[134px] font-bold text-[#93DDDE] font-Josefin">TETI Course</h1>

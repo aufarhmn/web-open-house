@@ -8,7 +8,11 @@ function Navbar() {
       <div className="px-16 py-8 bg-white border-b-4">
         <div className="container mx-auto font-Josefin">
           <div className="flex items-center">
-            <div className="w-3/12 text-3xl font-semibold">Open House.</div>
+            <div className="w-3/12 text-3xl font-semibold">
+              <Link href="/">
+              Open House.
+              </Link>
+            </div>
             <div className="w-6/12">
               <ul className="flex justify-center space-x-10">
                     <li><a href="#events" className="font-l text-bold text-l py-4">Events</a></li>

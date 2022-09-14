@@ -21,7 +21,7 @@ export default function TETIClass() {
     return(
         <>
             <Head>
-                <title>Teti Class</title>
+                <title>TETI Class</title>
             </Head>
             <NavbarSimplified />
             <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px]" data-aos="fade-up" data-aos-duration="2000">

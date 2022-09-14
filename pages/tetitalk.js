@@ -34,7 +34,7 @@ export default function TETITalk() {
   return (
     <>
       <Head>
-        <title>Teti Talk</title>
+        <title>TETI Talk</title>
       </Head>
       <main>
         <NavbarSimplified />

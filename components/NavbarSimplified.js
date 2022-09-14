@@ -10,7 +10,9 @@ function NavbarSimplified() {
                 <div className="container mx-auto font-Josefin">
                     <div className="flex items-center">
                         <div className="w-6/12 text-3xl font-semibold">
-                            Open House.
+                            <Link href="/">
+                                Open House.
+                            </Link>
                         </div>
                         <div className="w-6/12 text-right">
                             <Link href="/">
