@@ -30,7 +30,7 @@
             "answer" : "Kamu akan mendapatkan announcement pengiriman email ke alamat email yang telah kamu tulis di identity form."
         },
         {
-            "ask" : "- Apakah saya harus pindah link zoom untuk mengikuti per rangkaian acara dalam satu hari acara?",
+            "ask" : "Apakah saya harus pindah link zoom untuk mengikuti per rangkaian acara dalam satu hari acara?",
             "answer" : "Tidak perlu."
         },
         {
@@ -55,7 +55,7 @@
         },
         {
             "ask" : "Jika ada pertanyaan, ke mana saya harus bertanya?",
-            "answer" : "Kamu dapat mengisikan pertanyaanmu pada halaman Contact Us pada menu utama website."
+            "answer" : "Kamu dapat mengisikan pertanyaanmu pada halaman TETI Class, TETI Fair, TETI Course, ataupun TETI Talk."
         }
     ]
 }

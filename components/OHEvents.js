@@ -22,7 +22,7 @@ export default function OHEvents() {
         {[1, 2, 3, 4, 5, 6, 7].map((n) => {
           return (
             <SwiperSlide key={n}>
-              <div className="mb-5 ml-3 last:mr-3 h-[470px] max-w-sm rounded-[42px] bg-[#F3F3F3] py-9 px-9 drop-shadow-xl cursor-grab">
+              <div className="mb-5 ml-3 last:mr-3 h-[470px] max-w-sm rounded-[42px] bg-[#F3F3F3] py-9 px-9 drop-shadow-xl cursor-grab" data-aos="zoom-in-up" data-aos-duration="2000">
                 <div className="card flex flex-col items-center gap-y-12">
                   <Image src={FireLogo} alt="flaming fire" />
                   <div>

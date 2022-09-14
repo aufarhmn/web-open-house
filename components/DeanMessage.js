@@ -39,7 +39,7 @@ export default function DeanMessage() {
     >
       {[1, 2, 3, 4].map((n) => {
         return (
-          <SwiperSlide key={n} className="py-2 px-2">
+          <SwiperSlide key={n} className="py-2 px-2" data-aos="flip-up" data-aos-duration="3000">
             <div className="mr-7 ml-10 xl:mx-auto flex justify-center outline-8 outline outline-[#2FA4FF] py-10 rounded-[40px]">
               <div className=" max-w-sm sm:max-w-lg md:max-w-2xl text-center font-Poppins cursor-grab">
                 <h2 className="text-4xl font-semibold text-[#554E4E] font-Josefin">

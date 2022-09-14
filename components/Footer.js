@@ -14,17 +14,21 @@ export default function Footer() {
                     industry's standard dummy text ever since the 1500s,{" "}
                 </h6>
                 <div className="flex flex-row items-start justify-start gap-[15px] mt-[17px] xl:mt-[27px] text-[24px]">
-                    <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
+                    {/* <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
                         <MdFacebook />
-                    </div>
+                    </div> */}
                     <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
-                        <AiOutlineInstagram />
+                        <Link href="https://www.instagram.com/openhouseteti/">
+                            <AiOutlineInstagram />
+                        </Link>
                     </div>
-                    <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
+                    {/* <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
                         <AiOutlineTwitter />
-                    </div>
+                    </div> */}
                     <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">
-                        <AiFillYoutube />
+                        <Link href="https://www.youtube.com/channel/UCVR1e_ufQ4-ZjJDoJpQgA2A">
+                            <AiFillYoutube />
+                        </Link>
                     </div>
                 </div>
             </div>
