@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import NavbarSimplified from "../components/NavbarSimplified";
 import BackToTop from "../components/BackToTop";
 import GetInTouch from "../components/GetInTouch";
-import Benefits from "../components/Benefits";
 
 export default function TETICourse() {
     return (
@@ -24,8 +23,6 @@ export default function TETICourse() {
                     <p className="w-[90%]">Rangkaian acara berupa <i>coding session</i> dengan beberapa pilihan course yang dapat dipilih. Beberapa course yang ditawarkan yakni UI/UX, Website Development, dan Robotika.</p>
                 </div>
             </div>
-            {/* Benefit minjem komponen punya teti talk */}
-            <Benefits />
             <GetInTouch />
             <Footer />
             <BackToTop />
