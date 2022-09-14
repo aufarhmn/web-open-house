@@ -1,9 +1,12 @@
-import Benefits from "../components/Benefits";
+import Benefits from "../components/TetiClass/Benefits";
 import NavbarSimplified from "../components/NavbarSimplified";
-import Speaker from "../components/Speaker";
+import Speaker from "../components/TetiClass/Speaker";
 import pakAdha from '../Assets/Images/Speaker/pakAdha.png'
 import Footer from "../components/Footer";
 import GetInTouch from "../components/GetInTouch";
+import BackToTop from "../components/BackToTop";
+import Head from "next/head";
+import AboutSpeaker from "../components/TetiClass/AboutSpekear";
 
 
 let props = {
@@ -12,51 +15,41 @@ let props = {
     job : "CEO of Pak Adha"
 }
 
-const shadow = {
-    boxShadow: "-6.90431px -6.90431px 13.8086px #FFFFFF, 6.90431px 6.90431px 13.8086px rgba(0, 0, 0, 0.09)"
-}
+
 
 export default function TETIClass() {
     return(
         <>
+            <Head>
+                <title>Teti Class</title>
+            </Head>
             <NavbarSimplified />
-            <div className="my-[120px] mx-[100px] ">
-                <h1 className="text-[134px] font-bold text-[#93DDDE] font-Josefin">TETI Class</h1>
+            <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px] ">
+                <h1 className="md:text-[134px] text-[72px] font-bold text-[#93DDDE] font-Josefin text-center md:text-left">TETI Class</h1>
             </div>
-            <div className="flex w-full">
-                <div className="w-[40%] flex justify-center items-start">
-                    <h2 className="text-[58px] font-bold font-Josefin">About TETI
+            <div className="flex flex-col w-full lg:flex-row">
+                <div className="h-[40%] lg:w-[40%] lg:h-[auto] flex justify-center items-start">
+                    <h2 className="text-[36px] md:text-[58px] font-bold font-Josefin">About TETI
                         <br/>
-                        <div className="w-[250px] h-[80px] bg-[#E7FFC1]" style={{clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)"}}>
+                        <div className="lg:w-[250px] lg:h-[80px] bg-[#E7FFC1]" style={{clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)"}}>
                             <p className="text-center">Class</p>
                         </div>
                     </h2>
                 </div>
-                <div className="w-[60%] font-Poppins text-[30px] text-justify">
+                <div className="h-[60%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
                     <p className="w-[90%]">Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.</p>
                 </div>
             </div>
             <Benefits />
-            <div className="w-[80%] flex flex-col mx-auto my-72">
+            <div className="w-[80%] flex flex-col mx-auto my-36 md:my-72">
                 <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">Lectured by</h3>
-                <div className="flex flex-row">
+                <div className="flex flex-col md:items-center lg:items-start lg:flex-row ">
                     <Speaker {...props} />
-                    <div className="w-[70%] flex flex-col justify-center px-[50px] font-Poppins text-[#5A5A5A]">
-                        <h3 className="font-bold text-[32px] mb-[16px]">Dr.Eng. Ir. Adha Imam Cahyadi, S.T., M.Eng., IPM.</h3>
-                        <p className=" text-[24px] mb-[16px]">
-                            Control for nonlinear dynamical systems, Control for systems with delay, Multi agents control systems, Teleoperation systems
-                        </p>
-                        <p className=" text-[24px] mb-[16px]">
-                            Best Paper Award, IEEE Indonesian Section, 2015
-                            Best Paper Award, Robotics Society of Taiwan, 2013  
-                        </p>
-                        <div className="w-[286px] h-[198px] flex flex-col justify-center bg-[#F3F3F3] font-Montserrat text-center rounded-[10px]" style={shadow}>
-                            <p className="text-[24px]  text-[#434343]">Years of Experience</p>
-                            <h1 className="text-[75px] font-bold text-[#29BDBC]">12</h1>
-                        </div>
-                    </div>
+                    <AboutSpeaker />
                 </div>
             </div>
+
+            <BackToTop />
             <GetInTouch />
             <Footer />
         </>
