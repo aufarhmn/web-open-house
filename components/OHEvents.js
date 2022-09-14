@@ -9,7 +9,7 @@ import Image from 'next/image'
 // TODO: fix layouting(?)
 export default function OHEvents() {
   return (
-    <main className="max-w-[1638px] ml-[5%] font-Poppins">
+    <main className="max-w-[1638px] ml-[5%] font-Poppins" id="events">
       <h1 className="text-5xl font-bold mb-16 mt-20 text-[#505050]">
         What we Offer
       </h1>

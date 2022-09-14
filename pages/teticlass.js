@@ -1,8 +1,9 @@
 import Benefits from "../components/Benefits";
-import Navbar from "../components/Navbar";
+import NavbarSimplified from "../components/NavbarSimplified";
 import Speaker from "../components/Speaker";
 import pakAdha from '../Assets/Images/Speaker/pakAdha.png'
 import Footer from "../components/Footer";
+import GetInTouch from "../components/GetInTouch";
 
 
 let props = {
@@ -18,7 +19,7 @@ const shadow = {
 export default function TETIClass() {
     return(
         <>
-            <Navbar />
+            <NavbarSimplified />
             <div className="my-[120px] mx-[100px] ">
                 <h1 className="text-[134px] font-bold text-[#93DDDE] font-Josefin">TETI Class</h1>
             </div>
@@ -56,6 +57,7 @@ export default function TETIClass() {
                     </div>
                 </div>
             </div>
+            <GetInTouch />
             <Footer />
         </>
     )

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineInstagram, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 
@@ -31,16 +32,24 @@ export default function Footer() {
                 <h4 className="text-[24px] font-bold md:text-left text-center">Features</h4>
                 <div className="flex flex-row items-center md:items-start justify-center md:justify-start gap-[30px] mt-[20px] flex-wrap">
                     <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
-                        TETI Fair
+                        <Link href="/tetifair">
+                            TETI Fair
+                        </Link>
                     </h5>
                     <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
-                        TETI Course
+                        <Link href="/teticourse">
+                            TETI Course
+                        </Link>
                     </h5>
                     <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
-                        TETI Class
+                        <Link href="/teticlass">
+                            TETI Class
+                        </Link>
                     </h5>
                     <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
-                        TETI Talk
+                        <Link href="/tetitalk">
+                            TETI Talk
+                        </Link>
                     </h5>
                 </div>
             </div>
