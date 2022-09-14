@@ -3,6 +3,7 @@ import NavbarSimplified from "../components/NavbarSimplified";
 import Speaker from "../components/Speaker";
 import pakAdha from '../Assets/Images/Speaker/pakAdha.png'
 import Footer from "../components/Footer";
+import GetInTouch from "../components/GetInTouch";
 
 
 let props = {
@@ -56,6 +57,7 @@ export default function TETIClass() {
                     </div>
                 </div>
             </div>
+            <GetInTouch />
             <Footer />
         </>
     )

@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import v4 from "../../Assets/Images/TetiFair/v4.svg"
 
 const styleCircle = "bg-[#EDEDED] rounded-full w-[242px] flex justify-center items-center"
 const styleCircleInner = "w-[158px] flex justify-center items-center rounded-full"
@@ -22,10 +24,7 @@ export default function StandFor() {
                     <div>
                         <div className={styleCircle} style={shadowCircle}>
                             <div className={styleCircleInner} style={shadowCircleInner}>
-                                <img
-                                    src="/Assets/Images/TetiFair/Vector 4.svg"
-                                    className={styleImg}
-                                />
+                                <Image src={v4} alt="v4" className={styleImg}/>
                             </div>
                         </div>
                         <h4 className="font-bold text-[19px] mb-10">

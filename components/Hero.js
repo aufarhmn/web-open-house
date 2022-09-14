@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 //TODO : Responsiveness, animation, hover
 
@@ -32,14 +33,18 @@ const Hero = () => {
             scrollToForm();
           }}
         >
+          <Link href="#form">
           Register Now
+          </Link>
         </div>
         <div className="cursor-pointer text-[#8A8D8F] bg-[#F9F9F9] flex justify-center items-center w-[80%] md:w-[192px] h-[85px] rounded-[15px] border-[5px] border-[#E3E3E3]"
           onClick={() => {
             scrollToEvents();
           }}
         >
+          <Link href="#events">
           Learn More
+          </Link>
         </div>
       </div>
     </div>

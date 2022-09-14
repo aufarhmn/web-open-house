@@ -4,6 +4,7 @@ import Benefits from "../components/Benefits";
 import { SpeakerCard } from "../components/TetiTalk/SpeakerCard";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
+import GetInTouch from "../components/GetInTouch";
 
 
 export default function TETITalk() {
@@ -77,6 +78,7 @@ export default function TETITalk() {
           ))}
         </div>
       </main>
+      <GetInTouch />
       <Footer />
       <BackToTop />
     </>
