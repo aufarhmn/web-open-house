@@ -24,10 +24,10 @@ export default function TETIClass() {
                 <title>Teti Class</title>
             </Head>
             <NavbarSimplified />
-            <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px] ">
+            <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px]" data-aos="fade-up" data-aos-duration="2000">
                 <h1 className="md:text-[134px] text-[72px] font-bold text-[#93DDDE] font-Josefin text-center md:text-left">TETI Class</h1>
             </div>
-            <div className="flex flex-col w-full lg:flex-row">
+            <div className="flex flex-col w-full lg:flex-row" data-aos="fade-up" data-aos-duration="2000">
                 <div className="h-[40%] lg:w-[40%] lg:h-[auto] flex justify-center items-start">
                     <h2 className="text-[36px] md:text-[58px] font-bold font-Josefin">About TETI
                         <br/>

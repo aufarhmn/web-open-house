@@ -6,7 +6,7 @@ export default function AboutSpeaker(){
 
     return(
         <>
-            <div className="w-[100%] lg:w-[70%] md:my-10 flex flex-col justify-center text-justify lg:text-left lg:px-[50px] font-Poppins text-[#5A5A5A]">
+            <div className="w-[100%] lg:w-[70%] md:my-10 flex flex-col justify-center text-justify lg:text-left lg:px-[50px] font-Poppins text-[#5A5A5A]" data-aos="fade-up-left" data-aos-duration="2000">
                 <h3 className="font-bold text-[24px] md:text-[32px] mb-[24px]">Dr.Eng. Ir. Adha Imam Cahyadi, S.T., M.Eng., IPM.</h3>
                 <p className=" text-[16px] md:text-[24px] mb-[24px]">
                     Control for nonlinear dynamical systems, Control for systems with delay, Multi agents control systems, Teleoperation systems

@@ -12,7 +12,7 @@ const shadow = {
 export default function Speaker(props) {
     return(
         
-                <div className="w-[100%] md:w-[auto] flex justify-between my-20 md:my-3">
+                <div className="w-[100%] md:w-[auto] flex justify-between my-20 md:my-3" data-aos="fade-up-right" data-aos-duration="2000">
                     <div className={benefitsStyle} style={shadow}>
                         <div className={imgStyle}>
                             <Image src={props.photo} alt="advantage1" />

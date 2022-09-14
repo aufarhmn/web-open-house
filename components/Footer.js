@@ -10,8 +10,7 @@ export default function Footer() {
                     Open House DTETI FT UGM
                 </h3>
                 <h6 className="text-[18px] mx-[20px] sm:mx-0 sm:w-[350px] mt-[15px] xl:mt-[22px] md:text-left text-center">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,{" "}
+                Jl. Grafika No.2, Yogyakarta, Sendowo, Sinduadi, Kec. Mlati, Kota Yogyakarta, Daerah Istimewa Yogyakarta{" "}
                 </h6>
                 <div className="flex flex-row items-start justify-start gap-[15px] mt-[17px] xl:mt-[27px] text-[24px]">
                     {/* <div className="cursor-pointer text-white hover:text-black transition duration-200 ease-in-out">

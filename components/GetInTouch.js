@@ -5,6 +5,7 @@ import { db } from "../firebase/firebase.js";
 const GetInTouch = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
   const dbReff = collection(db, "get-in-touch");
 
   const handleSubmit = (e) => {
@@ -13,6 +14,7 @@ const GetInTouch = () => {
     addDoc(dbReff, {
       name: name,
       email: email,
+      message: message,
     })
       .then(() => {
         alert("Your message has been submitted");
@@ -23,6 +25,7 @@ const GetInTouch = () => {
 
     setName("");
     setEmail("");
+    setMessage("");
   };
 const shadowInput = {
   boxShadow: "inset 7.66376px 7.66376px 15.3275px rgba(0, 0, 0, 0.09)"
@@ -48,6 +51,7 @@ const shadowSubmit = {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
               />
               <input
                 className="p-8 rounded-xl h-8 text-xl text-black px-8 bg-[#E8E8E8]"
@@ -55,9 +59,22 @@ const shadowSubmit = {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
-              <button className="text-xl py-5 lg:py-0 px-5 lg:px-10 rounded-xl bg-[#E8E8E8] text-xl text-green-300" type="submit" style={shadowSubmit}> Get In Touch! </button>
             </div>
+            <div className="mt-8 w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
+              <input 
+                className="w-full p-8 rounded-xl text-xl text-black px-8 bg-[#E8E8E8]"
+                style={shadowInput}
+                placeholder="Message"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
+            <div className="">
+              <button className="text-xl lg:py-0 px-5 lg:px-10 rounded-xl bg-[#E8E8E8] text-xl text-green-300" type="submit" style={shadowSubmit}> Get In Touch! </button>
+              </div>
           </form>
         </div>
       </div>

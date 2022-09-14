@@ -1,6 +1,7 @@
 import { addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { db } from "../firebase/firebase.js";
+import SubEventModal from "./SubEventModal";
 
 const Form = () => {
     const [name, setName] = React.useState("");
@@ -16,7 +17,7 @@ const Form = () => {
             day: day,
         })
         .then(() => {
-            window.alert("Your message has been submitted");
+            console.log("Document successfully written!");
         })
         .catch((error) => {
             console.log(error.message);
