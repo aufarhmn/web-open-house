@@ -1,16 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logoOH from "../Assets/Logo/logoOH.jpg"
 
 function Navbar() {
   return (
     // TODO: Responsive (Breakpoint pakai hamburger icon) + Fixed Content
     <>
-      <div className="px-16 py-8 bg-white border-b-4">
+      <div className="px-4 py-4 bg-white border-b-4">
         <div className="container mx-auto font-Josefin">
           <div className="flex items-center">
             <div className="w-3/12 text-3xl font-semibold">
               <Link href="/">
-              Open House.
+                <Image src={logoOH} alt="logo" width="80" height="80" /> 
               </Link>
             </div>
             <div className="w-6/12">
