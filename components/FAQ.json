@@ -2,28 +2,60 @@
     "faq" : 
     [
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Apa itu Open House DTETI 2022?",
+            "answer" : "Open House merupakan kegiatan tahunan yang diadakan oleh Departemen Teknik Elektro dan Teknologi Informasi yang bertujuan untuk memperkenalkan DTETI ke masyarakat luas khususnya kepada siswa/i yang akan melanjutkan studinya ke perguruan tinggi. Open House DTETI 2022 mengangkat tema TETIZONE serta tagline “Break the Encryption, Unveil your Passion”. Rangkaian acara yang diadakan pada event ini yaitu Teti Fair, Teti Class, Teti Course, dan juga Teti Talk."
         },
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Kapan acara ini akan dilaksanakan?",
+            "answer" : "Acara ini akan dilaksanakan tanggal 24 - 25 September 2022."
         }, 
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Apakah acara ini dipungut biaya?",
+            "answer" : "Acara ini bersifat gratis atau tidak dipungut biaya."
         },
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Kapan pendaftaran dibuka dan ditutup?",
+            "answer" : "Pendaftaran dibuka pada tanggal 5 September 2022 dan ditutup pada tanggal 21 September 2022"
         },
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Bagaimana cara mendaftar di Open House DTETI 2022?",
+            "answer" : "Dapat langsung mengisi form pendaftaran yang tersedia di website Open House DTETI 2022."
         },
         {
-            "ask" : "Q. What is the name of department",
-            "answer" : "A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis."
+            "ask" : "Apa perbedaan tiket Day 1 dan Day 2?",
+            "answer" : "Tiket Day 1 adalah tiket untuk mengikuti Open House DTETI 2022 pada hari pertama yang terdiri dari TETIFAIR dan TETICLASS. Sementara itu, Tiket Day 2 adalah tiket untuk mengikuti Open House DTETI 2022 pada hari kedua yang terdiri dari TETICOURSE dan TETITALK"
+        },
+        {
+            "ask" : "Bagaimana saya tahu saya sudah terdaftar menjadi salah satu peserta Open House DTETI 2022?",
+            "answer" : "Kamu akan mendapatkan announcement pengiriman email ke alamat email yang telah kamu tulis di identity form."
+        },
+        {
+            "ask" : "- Apakah saya harus pindah link zoom untuk mengikuti per rangkaian acara dalam satu hari acara?",
+            "answer" : "Tidak perlu."
+        },
+        {
+            "ask" : "Apakah saya harus pindah link zoom untuk mengikuti rangkaian acara pada day 1 dan day 2?",
+            "answer" : "Perlu, karena link zoom day 1 dan day 2 berbeda."
+        },
+        {
+            "ask" : "Apakah saya akan diingatkan untuk mengikuti rangkaian kegiatan yang sudah saya daftar?",
+            "answer" : "Email akan dikirimkan H - 2 acara yang berisi reminder sekaligus link zoom."
+        },
+        {
+            "ask" : "Jika sudah daftar di day 1 apakah masih boleh mendaftar di day 2?",
+            "answer" : "Boleh mendaftar di kedua hari sekaligus."
+        },
+        {
+            "ask" : "Apakah saya bisa membatalkan pendaftaran saya?",
+            "answer" : "Tiket yang sudah terdaftarkan tidak bisa dibatalkan."
+        },
+        {
+            "ask" : "Apakah saya bisa melihat jadwal dan agenda?",
+            "answer" : "Rundown acara dapat dilihat di laman website rangkaian acara (sek ini msh blm fix)"
+        },
+        {
+            "ask" : "Jika ada pertanyaan, ke mana saya harus bertanya?",
+            "answer" : "Kamu dapat mengisikan pertanyaanmu pada halaman Contact Us pada menu utama website."
         }
     ]
 }

@@ -55,13 +55,7 @@ export default function TETITalk() {
             </h2>
           </div>
           <p className="max-w-[730px] text-[30px] font-light">
-            A. Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec
-            hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis
-            iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur
-            eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non,
-            efficitur felis. Aliq quis iaclis mi, a laoreet elit. Fus neque dui,
-            vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum
-            facilisis, pharetra ex non, efficitur felis.
+            Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus. Pada Open House kali ini akan mengundang ...
           </p>
         </div>
 
