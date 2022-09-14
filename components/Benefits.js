@@ -3,7 +3,7 @@ import benefits1 from '../Assets/Images/benefitsAssets/1.svg'
 import benefits2 from '../Assets/Images/benefitsAssets/2.svg'
 import benefits3 from '../Assets/Images/benefitsAssets/3.svg'
 
-const benefitsStyle = "bg-[#F3F3F3] rounded-[28px] w-[290px] h-[412px] flex flex-col items-center "
+const benefitsStyle = "bg-[#F3F3F3] rounded-[28px] w-[290px] h-[412px] flex flex-col items-center my-5 lg:my-0"
 const imgStyle = "w-[155.55px] h-[155.55px] flex justify-center items-center rounded-full mt-[25px] "
 
 const shadow1 = {
@@ -18,7 +18,7 @@ export default function Benefits() {
     return(
         <div className="w-[80%] flex flex-col mx-auto my-72">
                 <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">The Benefits</h3>
-                <div className="flex justify-between my-3">
+                <div className="flex flex-col lg:flex-row justify-between my-3 mx-auto">
                     <div className={benefitsStyle} style={shadow1}>
                         <div className={imgStyle} style={shadow2}>
                             <Image src={benefits1} alt="advantage1" />
