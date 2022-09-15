@@ -44,9 +44,9 @@ const shadowInput = {
         </div>
         <div className="w-full flex justify-center">
           <form onSubmit={handleSubmit}>
-            <div className="w-[250px] sm:w-full md:w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
+            <div className="w-[250px] sm:w-[300px] md:w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
               <input
-                className="p-8 rounded-xl h-8 text-xl text-black px-8 bg-[#E8E8E8]"
+                className="p-8 rounded-xl h-8 text-xl text-black bg-[#E8E8E8]"
                 style={shadowInput}
                 placeholder="Name"
                 value={name}
@@ -54,7 +54,7 @@ const shadowInput = {
                 required
               />
               <input
-                className="p-8 rounded-xl h-8 text-xl text-black px-8 bg-[#E8E8E8]"
+                className="p-8 rounded-xl h-8 text-xl text-black bg-[#E8E8E8]"
                 style={shadowInput}
                 placeholder="Email"
                 value={email}
@@ -63,9 +63,9 @@ const shadowInput = {
                 type="email"
               />
             </div>
-            <div className="mt-8 w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
+            <div className="mt-8 w-[250px] sm:w-[300px] md:w-[400px] lg:w-full">
               <input 
-                className="w-full p-8 rounded-xl text-xl text-black px-8 bg-[#E8E8E8]"
+                className="w-full p-8 rounded-xl text-xl text-black bg-[#E8E8E8]"
                 style={shadowInput}
                 placeholder="Message"
                 value={message}
