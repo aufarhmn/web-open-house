@@ -21,7 +21,7 @@ export default function StandFor() {
         // TODO: Responsive, aos
         <div className="w-full h-full px-16 pb-[120px]">
             <div className="grid container mx-auto space-y-32">
-                <h3 className="text-[58px] font-bold text-black-100 text-left font-Poppins">
+                <h3 className="text-[58px] font-bold text-black-100 text-left font-Josefin">
                      What's TETITB Stand for
                 </h3>
                 <div className="flex items-start justify-between flex-col lg:flex-row gap-y-20 xl:gap-y-0 gap-x-10 xl:gap-x-[62px] font-Montserrat text-black-200 text-center">
