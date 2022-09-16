@@ -11,18 +11,16 @@ export const SpeakerCard = (props) => {
       "-13.1635px -13.1635px 32.9088px #FFFFFF, 13.1635px 13.1635px 32.9088px #D2D2D2",
   };
 
-  let flexDir = "w-[full] flex my-3 gap-32 justify-between";
+  let flexDir = "w-[full] flex my-3 gap-32 justify-center";
 
-  if(props.index % 2 == 1) {
-    flexDir = "w-[full] flex my-3 gap-32 justify-between flex-row";
-  } else {
-    flexDir = "w-[full] flex my-3 gap-32 justify-between flex-row-reverse";
-  }  
+  if(props.index % 2 !== 1) {
+    flexDir = "w-[full] flex my-3 gap-32 justify-center flex-row-reverse";
+  } 
 
   return (
     <div className="w-[80%] mx-auto mb-32">
       <div className={flexDir}>
-        <div className={benefitsStyle} style={shadow}>
+        <div className={benefitsStyle} style={shadow} data-aos="fade-up" data-aos-duration="2000">
           <div className={imgStyle}>
             <Image
               src={props.photo}
@@ -40,7 +38,8 @@ export const SpeakerCard = (props) => {
             </p>
           </div>
         </div>
-        <div className="max-w-[646px] font-Poppins flex flex-col justify-evenly">
+
+        <div className="max-w-[646px] font-Poppins flex flex-col justify-evenly" data-aos="fade-left" data-aos-duration="2000">
           <h2 className="text-[32px] font-bold">{props.name}</h2>
           <p className="text-[24.22px] mt-10">{props.desc}</p>
           <p className="text-[24.22px] mt-10">
