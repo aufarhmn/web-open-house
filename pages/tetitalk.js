@@ -38,12 +38,13 @@ export default function TETITalk() {
       </Head>
       <main>
         <NavbarSimplified />
-        <h1 className="text-[134px] font-Josefin font-bold my-[120px] mx-[100px] text-blue-25">
+        <h1 className="text-[134px] font-Josefin font-bold my-[120px] mx-[100px] text-blue-25"
+        data-aos="fade-up" data-aos-duration="2000">
           TETI Talk
         </h1>
 
         <div className="flex px-32 font-Josefin flex-col xl:flex-row justify-between gap-4 text-green-200">
-          <div className="font-bold text-center">
+          <div className="font-bold text-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">
             <h2 className="text-[58.5px] w-max">About TETI</h2>
             <h2
               className="text-[72.65px] bg-[#E7FFC1] max-w-[313px]"
@@ -54,7 +55,7 @@ export default function TETITalk() {
               Talk
             </h2>
           </div>
-          <p className="max-w-[730px] text-[30px] font-light">
+          <p className="max-w-[730px] text-[30px] font-light" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700">
             Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus. Pada Open House kali ini akan mengundang ...
           </p>
         </div>
