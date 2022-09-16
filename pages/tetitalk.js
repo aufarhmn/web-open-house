@@ -42,11 +42,11 @@ export default function TETITalk() {
           TETI Talk
         </h1>
 
-        <div className="flex px-32 font-Josefin justify-between gap-4 text-green-200">
+        <div className="flex px-32 font-Josefin flex-col xl:flex-row justify-between gap-4 text-green-200">
           <div className="font-bold text-center">
             <h2 className="text-[58.5px] w-max">About TETI</h2>
             <h2
-              className="text-[72.65px] bg-[#E7FFC1]"
+              className="text-[72.65px] bg-[#E7FFC1] max-w-[313px]"
               style={{
                 clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)",
               }}
