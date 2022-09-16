@@ -68,7 +68,7 @@ export default function TETITalk() {
         </div>
         <div className="odd:flex-row-reverse">
           {speakers.map((speaker) => (
-            <SpeakerCard index={speaker.index} photo={speaker.photo} name={speaker.name} job="Dosen" desc={speaker.job} />
+            <SpeakerCard index={speaker.index} photo={speaker.photo} name={speaker.name} job="Dosen" desc={speaker.job} key={speaker.index}/>
           ))}
         </div>
       </main>
