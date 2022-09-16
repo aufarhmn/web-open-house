@@ -11,10 +11,10 @@ export const SpeakerCard = (props) => {
       "-13.1635px -13.1635px 32.9088px #FFFFFF, 13.1635px 13.1635px 32.9088px #D2D2D2",
   };
 
-  let flexDir = "w-[full] flex my-3 gap-32 justify-center";
+  let flexDir = "w-[full] flex flex-col xl:flex-row my-3 xl:gap-32 gap-10 justify-center items-center";
 
   if(props.index % 2 !== 1) {
-    flexDir = "w-[full] flex my-3 gap-32 justify-center flex-row-reverse";
+    flexDir = "w-[full] flex flex-col my-3 xl:gap-32 gap-10 justify-center xl:flex-row-reverse items-center";
   } 
 
   return (

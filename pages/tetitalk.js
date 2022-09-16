@@ -62,7 +62,7 @@ export default function TETITalk() {
         <Benefits />
 
         <div className="mx-auto w-[80%]">
-          <h1 className="text-[58.5px] font-Poppins font-bold text-green-200 mb-32">
+          <h1 className="text-[58.5px] font-Poppins font-bold text-green-200 mb-32 text-center">
             Meet Our Speakers
           </h1>
         </div>
