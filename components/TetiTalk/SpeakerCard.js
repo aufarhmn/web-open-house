@@ -11,14 +11,14 @@ export const SpeakerCard = (props) => {
       "-13.1635px -13.1635px 32.9088px #FFFFFF, 13.1635px 13.1635px 32.9088px #D2D2D2",
   };
 
-  let flexDir = "w-[full] flex flex-col xl:flex-row my-3 xl:gap-32 gap-10 justify-center items-center";
+  let flexDir = "w-[full] flex flex-col xl:flex-row my-3 xl:gap-20 gap-10 justify-center items-center";
 
   if(props.index % 2 !== 1) {
-    flexDir = "w-[full] flex flex-col my-3 xl:gap-32 gap-10 justify-center xl:flex-row-reverse items-center";
+    flexDir = "w-[full] flex flex-col my-3 xl:gap-20 gap-10 justify-center xl:flex-row-reverse items-center";
   } 
 
   return (
-    <div className="w-[80%] mx-auto mb-32">
+    <div className="w-[90%] mx-auto mb-32">
       <div className={flexDir}>
         <div className={benefitsStyle} style={shadow} data-aos="fade-up" data-aos-duration="2000">
           <div className={imgStyle}>
