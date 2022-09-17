@@ -1,16 +1,46 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import FireLogo from '../Assets/Images/Carousel/fire.svg'
-import BtnDown from '../Assets/Images/Carousel/btnDown.svg'
+import FireLogo from '../Assets/Logo/CardLogo/fire.svg'
+import ArcheryTarget from '../Assets/Logo/CardLogo/archeryTarget.svg'
+import NoteLogo from '../Assets/Logo/CardLogo/note.svg'
+import BtnDown from '../Assets/Logo/CardLogo/btnDown.svg'
 // Import swiper styles
 import 'swiper/css'
 import Image from 'next/image'
+import Link from 'next/link'
 
-// TODO: fix layouting(?)
+const cards = [
+  {
+    name: 'TETI Fair',
+    desc: 'Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi mulai dari program studinya sampai kegiatan kemahasiswaan. Para siswa akan di kenalakan secara lebih mendalam tentang dunia perkuliahan, program studi yang ditawarkan, dan hal apa saja yang diperlukan sebelum menjadi mahasiswa DTETI.',
+    logo: FireLogo,
+    path: '/tetifair',
+  },
+  {
+    name: 'TETI Class',
+    desc: 'Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.',
+    logo: ArcheryTarget,
+    path: '/teticlass',
+  },
+  {
+    name: 'TETI Course',
+    desc: 'Rangkaian acara berupa coding session dengan beberapa pilihan course yang dapat dipilih. Beberapa course yang ditawarkan yakni UI/UX, Webdev, dan Robotika.',
+    logo: NoteLogo,
+    path: '/teticourse',
+  },
+  {
+    name: 'TETI Talk',
+    desc: 'Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis.  Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis.',
+    logo: FireLogo,
+    path: '/tetitalk',
+  },
+]
+
+// TODO: add routing and description for each events
 export default function OHEvents() {
   return (
-    <main className="max-w-[1638px] ml-[5%] font-Poppins" id="events">
-      <h1 className="text-5xl font-bold mb-16 mt-20 text-[#505050]">
+    <main className="max-w-[1638px] font-Poppins overscreen" id="events">
+      <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]">
         What we Offer
       </h1>
       <Swiper
@@ -19,31 +49,40 @@ export default function OHEvents() {
         keyboard={{ enabled: true, onlyInViewport: true }}
         breakpoints={breakpoints}
       >
-        {[1, 2, 3, 4, 5, 6, 7].map((n) => {
+        {cards.map((card) => {
+          const { name, logo, desc, path } = card
           return (
-            <SwiperSlide key={n}>
-              <div className="mb-5 ml-3 last:mr-3 h-[470px] max-w-sm rounded-[42px] bg-[#F3F3F3] py-9 px-9 drop-shadow-xl cursor-grab" data-aos="zoom-in-up" data-aos-duration="2000">
+            <SwiperSlide key={name} className="pt-5 pb-20">
+              <div
+                className="ml-3 last:mr-3 h-[460px] max-w-[334px] rounded-[42px] bg-[#F3F3F3] py-9 px-9 cursor-grab"
+                style={{
+                  boxShadow: '-20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2',
+                }}
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
                 <div className="card flex flex-col items-center gap-y-12">
-                  <Image src={FireLogo} alt="flaming fire" />
+                  <Image src={logo} alt={`${name} logo`} />
                   <div>
-                    <p className="mb-1 max-w-[245px] text-center text-sm leading-6 select-none">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea delectus, exercitationem minima omnis rerum nisi!
+                    <p className="mb-1 text-center text-sm leading-6 line-clamp-4">
+                      {desc}
                     </p>
                     <h1 className="text-center text-lg font-semibold text-[#505050] leading-7">
-                      TETI FAIR
+                      {name}
                     </h1>
                   </div>
-                  <div className="relative bg-white drop-shadow-xl text-[#93DDDE] text-md rounded-[45px] w-64 h-16 flex items-center justify-between cursor-pointer">
-                    <p className="mr-5 tracking-widest font-bold ml-auto">
-                      View Details
-                    </p>
-                    <Image
-                      src={BtnDown}
-                      alt="view detail button"
-                      className="h-full"
-                    />
-                  </div>
+                  <Link href={path}>
+                    <div className="relative bg-white drop-shadow-xl text-[#93DDDE] text-md rounded-[45px] w-64 h-16 flex items-center justify-between cursor-pointer">
+                      <p className="mr-5 tracking-widest font-bold ml-auto">
+                        View Details
+                      </p>
+                      <Image
+                        src={BtnDown}
+                        alt="view detail button"
+                        className="h-full"
+                      />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -79,25 +118,4 @@ const breakpoints = {
   1638: {
     slidesPerView: 3.5,
   },
-  // 520: {
-  //   slidesPerView: 1.5,
-  // },
-  // 576: {
-  //   slidesPerView: 1.75,
-  // },
-  // 680: {
-  //   slidesPerView: 2,
-  // },
-  // 728: {
-  //   slidesPerView: 2.5,
-  // },
-  // 926: {
-  //   slidesPerView: 3,
-  // },
-  // 1100: {
-  //   slidesPerView: 3.75,
-  // },
-  // 1280: {
-  //   slidesPerView: 4,
-  // },
 }

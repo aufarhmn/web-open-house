@@ -8,7 +8,7 @@ export default function BtnPrev() {
       viewBox="0 0 46 77"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="swiper-button-prev absolute left-[8%] top-60 sm:top-48 cursor-pointer z-20"
+      className="swiper-button-prev absolute left-[8%] top-[45%] cursor-pointer z-20"
     >
       <g filter="url(#filter0_d_13_11)">
         <path
