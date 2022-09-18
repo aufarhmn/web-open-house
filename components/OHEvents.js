@@ -30,7 +30,7 @@ const cards = [
   },
   {
     name: 'TETI Talk',
-    desc: 'Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec hendrerit metus enim, quis pretm odio vehicula eget. Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis.  Aliq quis iaclis mi, a laoreet elit. Fus neque dui, vestibulum at consectetur eu, mie vel mag. Pellentesque ac ipsum facilisis, pharetra ex non, efficitur felis.',
+    desc: 'Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus. Pada Open House kali ini akan mengundang',
     logo: FireLogo,
     path: '/tetitalk',
   },
