@@ -2,11 +2,15 @@ import { addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { db } from "../firebase/firebase.js";
 import SubEventModal from "./SubEventModal";
+import { useState } from "react";
+import { FormPopUp } from "./FormPopUp.js";
 
 const Form = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [day, setDay] = React.useState("");
+    const [showPopUp, setShowPopUp] = useState(false);
+    const [submitError, setSubmitError] = useState(false);
     const dbReff = collection(db, "form-data");
 
     const handleSubmit = (e) => {
@@ -18,9 +22,12 @@ const Form = () => {
         })
         .then(() => {
             console.log("Document successfully written!");
+            setShowPopUp(true);
         })
         .catch((error) => {
             console.log(error.message);
+            setSubmitError(true);
+            setShowPopUp(true);
         });
 
         setName("");
@@ -37,8 +44,13 @@ const Form = () => {
     //     // );
     // }
 
+    const closePopUp = () => {
+        setShowPopUp(false);
+    }
+
     return (
-        <div className="lg:columns-2 bg-blue-500 h-screen " id="form">
+        <>
+            <div className="lg:columns-2 bg-blue-500 h-screen " id="form">
             <div className="bg-grey-400 h-screen hidden lg:flex">
                
             </div>
@@ -86,9 +98,10 @@ const Form = () => {
                     </div>
                     <button type="submit" className="mt-10 h-14 w-1/2 p-auto text-green-300 bg-white rounded-xl text-2xl font-bold font-Montserrat">Submit</button>
                 </form>
+            <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>
             </div>
-            
         </div>
+        </>
     );
 }
 
