@@ -36,7 +36,7 @@ export default function TETITalk() {
       <Head>
         <title>TETI Talk</title>
       </Head>
-      <main>
+      <main className="overflow-x-hidden">
         <NavbarSimplified />
         <h1 className="text-[134px] font-Josefin font-bold my-[120px] mx-[100px] text-blue-25"
         data-aos="fade-up" data-aos-duration="2000">
