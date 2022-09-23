@@ -21,8 +21,8 @@ export const FormPopUp = (props) => {
           <p className="px-10 py-5">
             {
               isError
-              ? "Registrasi gagal, mohon coba kembali."
-              : "Registrasi berhasil."
+              ? "Data Anda gagal dikirimkan. Silahkan coba lagi!"
+              : "Data Anda berhasil dikirimkan, Terima Kasih!"
             }
           </p>
         </div>

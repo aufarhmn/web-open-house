@@ -1,11 +1,15 @@
 import { addDoc, collection } from "firebase/firestore";
 import React from "react";
+import { useState } from "react";
+import { FormPopUp } from "./FormPopUp.js";
 import { db } from "../firebase/firebase.js";
 
 const GetInTouch = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const dbReff = collection(db, "get-in-touch");
 
   const handleSubmit = (e) => {
@@ -17,16 +21,22 @@ const GetInTouch = () => {
       message: message,
     })
       .then(() => {
-        alert("Your message has been submitted");
+        setShowPopUp(true);
       })
       .catch((error) => {
-        alert(error.message);
+        setSubmitError(true);
+        setShowPopUp(true);
       });
 
     setName("");
     setEmail("");
     setMessage("");
   };
+
+const closePopUp = () => {
+    setShowPopUp(false);
+}
+
 const shadowInput = {
   boxShadow: "inset 7.66376px 7.66376px 15.3275px rgba(0, 0, 0, 0.09)"
 }
@@ -79,6 +89,7 @@ const shadowInput = {
               </button>
             </div>
           </form>
+          <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>
         </div>
       </div>
     </div>
