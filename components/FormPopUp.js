@@ -1,3 +1,14 @@
+import { db } from "../firebase/firebase";
+import { collection, getDocs } from "firebase/firestore";
+
+var data;
+const getInv = await getDocs(collection(db, "links"));
+getInv.forEach(doc => {
+  data = doc.data();
+})
+
+console.log(getInv);
+
 export const FormPopUp = (props) => {
   const show = props.showPopUp;
   const isError = props.submitError;
@@ -21,10 +32,14 @@ export const FormPopUp = (props) => {
           <p className="px-10 py-5">
             {
               isError
-              ? "Data Anda gagal dikirimkan. Silahkan coba lagi!"
+              ? "Registrasi Anda Gagal! Silahkan coba lagi!"
               : "Data Anda berhasil dikirimkan, Terima Kasih!"
             }
           </p>
+          <div className="">
+          <p>Silahkan bergabung di grup whatsapp ini</p>
+          <a href={data.inv}> {data.inv} </a>
+        </div>
         </div>
       </div>
     );

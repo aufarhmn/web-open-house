@@ -1,7 +1,6 @@
 import React from "react";
 import { db } from "../firebase/firebase.js";
 import { collection, getDocs } from "firebase/firestore";
-import faq from "./FAQ.json";
 
 const styleQ = "w-full px-[24px] py-[25px] rounded bg-grey-100 font-Josefin font-bold text-xl"
 const styleA = "font-Josefin font-light text-xl pb-10"

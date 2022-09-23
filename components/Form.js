@@ -35,15 +35,6 @@ const Form = () => {
         setDay("");
     };
 
-    // const testSubmit = () =>{
-    //    console.log("test")
-    //     // return(
-    //     //     <div className="fixed w-4/5 bg-green-400 h-6 p-auto top-0 mx-auto">
-    //     //        <span>Success!</span> Data anda telah masuk
-    //     //     </div>
-    //     // );
-    // }
-
     const closePopUp = () => {
         setShowPopUp(false);
     }

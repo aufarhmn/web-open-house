@@ -1,7 +1,7 @@
 import { addDoc, collection } from "firebase/firestore";
+import { GetInTouchPopUp } from "./GetInTouchPopUp.js";
 import React from "react";
 import { useState } from "react";
-import { FormPopUp } from "./FormPopUp.js";
 import { db } from "../firebase/firebase.js";
 
 const GetInTouch = () => {
@@ -33,13 +33,13 @@ const GetInTouch = () => {
     setMessage("");
   };
 
-const closePopUp = () => {
-    setShowPopUp(false);
-}
+  const closePopUp = () => {
+      setShowPopUp(false);
+  }
 
-const shadowInput = {
-  boxShadow: "inset 7.66376px 7.66376px 15.3275px rgba(0, 0, 0, 0.09)"
-}
+  const shadowInput = {
+    boxShadow: "inset 7.66376px 7.66376px 15.3275px rgba(0, 0, 0, 0.09)"
+  }
 
   return (
     <div className="w-full h-full bg-white px-16 py-20">
@@ -89,7 +89,7 @@ const shadowInput = {
               </button>
             </div>
           </form>
-          <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>
+          <GetInTouchPopUp getInTouchPopUpShowPopUp={showPopUp} getInTouchPopUpSubmitError={submitError} getInTouchPopUpClosePopUp={closePopUp}/>
         </div>
       </div>
     </div>
