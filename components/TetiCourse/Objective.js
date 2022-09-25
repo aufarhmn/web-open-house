@@ -10,7 +10,7 @@ export default function Objective({
 }) {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-[20px] md:gap-[88px] mt-[40px] md:mt-[30px]">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-[20px] md:gap-[88px] mt-[60px] md:mt-[50px]">
                 <div className="relative w-[144px] h-[144px]">
                     <Image src={imgSrc} layout="fixed"></Image>
                 </div>
