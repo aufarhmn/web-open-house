@@ -7,8 +7,6 @@ getInv.forEach(doc => {
   data = doc.data();
 })
 
-console.log(getInv);
-
 export const FormPopUp = (props) => {
   const show = props.showPopUp;
   const isError = props.submitError;
