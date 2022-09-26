@@ -3,29 +3,24 @@ import React from "react";
 export default function Title() {
     return (
         // TODO: Responsive, padding (px)
-        <div className="w-full h-full px-16 pt-[120px]">
-            <div className="grid container mx-auto space-y-16 font-Poppins">
-                <div className="grid justify-items-start space-y-[100px] lg:space-y-[200px]">
-                    <h1 className="font-Josefin text-[134px] font-bold text-blue-25">
-                        TETI Fair
-                    </h1>
-                    <div className="flex items-start flex-col lg:flex-row gap-10 lg:gap-0 font-Poppins text-blue-950">
-                        <div className="grid w-full xl:w-3/5 text-left">
-                            <h2 className="font-bold text-[58px]">
-                                About TETI
-                                <br/>
-                                <p className="text-[72px]">
-                                    Fair
-                                </p>
-                            </h2>
+        <div className="overflow-hidden">
+            <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px]" data-aos="fade-up" data-aos-duration="2000">
+                <h1 className="md:text-[134px] text-[72px] font-bold text-[#93DDDE] font-Josefin text-center md:text-left">
+                    TETI Fair
+                </h1>
+            </div>
+            <div className="flex flex-col w-full lg:flex-row" data-aos="fade-up" data-aos-duration="2000">
+                <div className="h-[40%] lg:w-[40%] lg:h-[auto] flex justify-center items-start">
+                    <h2 className="text-[36px] md:text-[58px] font-bold font-Josefin">
+                        About TETI
+                        <br/>
+                        <div className="lg:w-[250px] lg:h-[80px] bg-[#E7FFC1]" style={{clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)"}}>
+                            <p className="text-center">Fair</p>
                         </div>
-                        <p className="text-justify text-[30px] lg:w-full">
-                            Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi 
-                            mulai dari program studinya sampai kegiatan kemahasiswaan. Para siswa akan di kenalakan secara lebih 
-                            mendalam tentang dunia perkuliahan, program studi yang ditawarkan, dan hal apa saja yang diperlukan 
-                            sebelum menjadi mahasiswa DTETI.
-                        </p>
-                    </div>
+                    </h2>
+                </div>
+                <div className="h-[60%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
+                    <p className="w-[90%]">Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.</p>
                 </div>
             </div>
         </div>
