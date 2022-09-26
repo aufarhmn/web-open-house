@@ -16,7 +16,7 @@ const shadow2 = {
 
 export default function Benefits() {
     return(
-        <div className="w-full h-full px-16 py-36 md:py-72">
+        <div className="w-[80%] h-full px-16 py-36 md:py-72">
             <div className="grid container mx-auto">
                     <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">
                         The Benefits
