@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
         </div>
         <div className="max-w-[580px] w-full" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-          <Image src="/OpenHouseHero.png" width={3147} height={2000} />
+          <Image src="/OpenHouseHero.png" width={3147} height={2000} priority/>
         </div>
       </div>
       <div className="w-full px-[5%] flex gap-5 lg:gap-16 md:flex-row text-[23px] justify-center items-center flex-col lg:justify-start md:mt-5" data-aos="fade-right" data-aos-delay="1000">
