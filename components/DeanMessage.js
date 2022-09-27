@@ -13,6 +13,7 @@ export default function DeanMessage() {
   const [index, setIndex] = useState(0)
 
   return (
+    <main className='overflow-x-hidden'>
     <Swiper
       modules={[Keyboard, Pagination, Navigation]}
       slidesPerView={1}
@@ -54,5 +55,6 @@ export default function DeanMessage() {
         <button ref={prevRef}>{index !== 0 && <BtnPrev />}</button>
       </div>
     </Swiper>
+    </main>
   )
 }

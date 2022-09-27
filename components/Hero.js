@@ -15,6 +15,7 @@ const scrollToEvents = () => {
 
 const Hero = () => {
   return (
+    <main className="overflow-x-hidden">
     <div className="flex flex-col items-center font-Poppins pt-10">
       <div className="px-[5%] md:leading-[85px] leading-[64px] w-full text-white flex items-center justify-between flex-col lg:flex-row">
         <div data-aos="fade-up" data-aos-duration="700">
@@ -44,6 +45,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
 

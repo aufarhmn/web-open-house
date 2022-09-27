@@ -17,6 +17,7 @@ function Navbar() {
   return (
     // TODO: Responsive (Breakpoint pakai hamburger icon) + Fixed Content
     <>
+    <main className="overflow-x-hidden">
       <div className="px-4 py-4 bg-white border-b-4">
         <div className="container mx-auto font-Josefin">
           <div className="flex items-center">
@@ -52,6 +53,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      </main>
     </>
   );
 }

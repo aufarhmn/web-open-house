@@ -39,7 +39,7 @@ const cards = [
 // TODO: add routing and description for each events
 export default function OHEvents() {
   return (
-    <main className="max-w-[1638px] font-Poppins overscreen" id="events">
+    <main className="max-w-[1638px] font-Poppins overscreen overflow-x-hidden" id="events">
       <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]">
         What we Offer
       </h1>

@@ -3,6 +3,7 @@ import React from "react";
 export default function About() {
     return (
         // TODO: Responsive (font size)
+        <main className="overflow-x-hidden">
         <div className="w-full h-full px-16 pt-[209px] pb-[175px] bg-white" id="about">
             <div className="grid container mx-auto space-y-16 font-Poppins text-center">
                 <h2 className="text-[54px] font-bold text-black-100" data-aos="zoom-in" data-aos-duration="2000">
@@ -17,5 +18,6 @@ export default function About() {
                 </p>
             </div>
         </div>
+        </main>
     );
 }

@@ -5,6 +5,7 @@ import { FaTiktok } from "react-icons/fa";
 
 export default function Location() {
     return (
+        <main className="overflow-x-hidden">
         <div className="flex flex-col lg:flex-row items-center justify-center px-[78px] xl:px-[98px] pt-[98px] sm:pt-[120px] pb-[98px] relative gap-[70px] 2xl:gap-[120px]">
             <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start">
                 <h2 className="text-[48px] text-[#93DDDE] font-bold lg:text-left text-center">Where Are We Located?</h2>
@@ -47,5 +48,6 @@ export default function Location() {
                 loading="lazy"
             ></iframe>
         </div>
+        </main>
     );
 }
