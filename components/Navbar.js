@@ -28,13 +28,13 @@ function Navbar() {
             </div>
             <div className="w-6/12">
               <ul className="flex justify-center space-x-10">
-                    <li><a className="font-l text-bold text-l py-4"
+                    <li><a className="hover:text-blue-500 font-l text-bold text-l py-4"
                       onClick={() => {
                         scrollToEvents();
                       }}>
                       Events
                     </a></li>
-                    <li><a className="font-l text-bold text-l py-4"
+                    <li><a className="hover:text-blue-500 font-l text-bold text-l py-4"
                       onClick={() => {
                         scrollToDepartement();
                       }}
