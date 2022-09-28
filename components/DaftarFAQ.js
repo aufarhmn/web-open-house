@@ -20,7 +20,9 @@ export default function DaftarFAQ () {
                                 <div className={styleQ} key={index}>
                                     <h2>{faq.question}</h2>
                                 </div>
+                                <div>
                                     <p className={styleA} key={index}>{faq.answer}</p>
+                                </div>
                             </>
                     );
                 })}

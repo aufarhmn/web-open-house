@@ -29,7 +29,7 @@ const cards = [
   },
   {
     name: 'TETI Course',
-    desc: 'Kegiatan berupa pembelajaran dengan pilihan course, pilihan tersebut antara lain Web Development, UI/UX, dan Robotika.',
+    desc: 'Kegiatan berupa pembelajaran dengan pilihan course yang berkaitan dengan skill-skill yang terkait dengan DTETI.',
     logo: NoteLogo,
     path: '/teticourse',
   },
