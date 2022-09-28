@@ -17,25 +17,25 @@ import { Keyboard, Pagination } from 'swiper'
 const cards = [
   {
     name: 'TETI Fair',
-    desc: 'Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi mulai dari program studinya sampai kegiatan kemahasiswaan. Para siswa akan di kenalakan secara lebih mendalam tentang dunia perkuliahan, program studi yang ditawarkan, dan hal apa saja yang diperlukan sebelum menjadi mahasiswa DTETI.',
+    desc: 'Kegiatan berupa webinar yang bertujuan untuk mengenalkan lebih jauh segala sesuatu tentang DTETI.',
     logo: FireLogo,
     path: '/tetifair',
   },
   {
     name: 'TETI Class',
-    desc: 'Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.',
+    desc: 'Kegiatan berupa online class mengenai salah satu mata kuliah di DTETI, yang akan diampu oleh salah satu dosen DTETI.',
     logo: ArcheryTarget,
     path: '/teticlass',
   },
   {
     name: 'TETI Course',
-    desc: 'Rangkaian acara berupa coding session dengan beberapa pilihan course yang dapat dipilih. Beberapa course yang ditawarkan yakni UI/UX, Webdev, dan Robotika.',
+    desc: 'Kegiatan berupa pembelajaran dengan pilihan course, pilihan tersebut antara lain Web Development, UI/UX, dan Robotika.',
     logo: NoteLogo,
     path: '/teticourse',
   },
   {
     name: 'TETI Talk',
-    desc: 'Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus. Pada Open House kali ini akan mengundang',
+    desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
     logo: FireLogo,
     path: '/tetitalk',
   },

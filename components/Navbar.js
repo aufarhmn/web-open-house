@@ -9,7 +9,7 @@ const scrollToEvents = () => {
 }
 
 const scrollToDepartement = () => {
-  const departement = document.getElementById("about");
+  const departement = document.getElementById("funfact");
   departement.scrollIntoView({ behavior: "smooth" });
 }
 

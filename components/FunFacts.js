@@ -12,7 +12,7 @@ import funfacts from './funfacts.json'
 // TODO: Dynamic Pagination
 export default function FunFacts() {
   return (
-    <section>
+    <section id="funfact">
       <h2 className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93DDDE] text-[35px] md:text-[45px] max-w-[630px]">
         Some random fun facts about our department
       </h2>
