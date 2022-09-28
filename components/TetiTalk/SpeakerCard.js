@@ -1,4 +1,6 @@
 import Image from "next/image";
+import userIcon from '/Assets/Images/Speaker/userIcon.png'
+
 
 //TODO: responsive
 export const SpeakerCard = (props) => {
@@ -23,24 +25,29 @@ export const SpeakerCard = (props) => {
         <div className={benefitsStyle} style={shadow} data-aos="fade-up" data-aos-duration="2000">
           <div className={imgStyle}>
             <Image
-              src={props.photo}
+              // src={props.photo}
+              src={userIcon}
               alt="advantage1"
-              width={400}
-              height={300}
+              // width={400}
+              // height={300}
             />
           </div>
-          <div className="h-[35%] w-[80%] flex flex-col justify-center">
+          <div className="h-[35%] w-[80%] flex flex-col justify-start">
+              <p className="font-Josefin text-[32px] text-[#434343] opacity-50 font-bold text-center">To be Announced</p>
+          </div>
+          {/* <div className="h-[35%] w-[80%] flex flex-col justify-center">
             <p className="font-Josefin text-[26px] text-[#434343] font-bold">
               {props.name}
+              To Be Announced
             </p>
             <p className="font-Josefin text-[26px] text-[#434343]">
               {props.job}
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="max-w-[646px] font-Poppins flex flex-col justify-evenly" data-aos="fade-left" data-aos-duration="2000">
-          <h2 className="text-[32px] font-bold">{props.name}</h2>
+          {/* <h2 className="text-[32px] font-bold">{props.name}</h2>
           <p className="text-[24.22px] mt-10">{props.desc}</p>
           <p className="text-[24.22px] mt-10">
             Best Paper Award, IEEE Indonesian Section, 2015 Best Paper Award,
@@ -50,7 +57,8 @@ export const SpeakerCard = (props) => {
             <div className="bg-gray-500 h-[50px] w-full rounded"></div>
             <div className="bg-gray-500 h-[50px] w-full rounded"></div>
             <div className="bg-gray-500 h-[50px] w-full rounded"></div>
-          </div>
+          </div> */}
+            <h1 className="font-bold text-[60px] text-[#5A5A5A] opacity-50 text-center">Coming Soon!!!</h1>
         </div>
       </div>
     </div>

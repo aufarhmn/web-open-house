@@ -7,6 +7,8 @@ import GetInTouch from "../components/GetInTouch";
 import BackToTop from "../components/BackToTop";
 import Head from "next/head";
 import AboutSpeaker from "../components/TetiClass/AboutSpekear";
+import ComingSoonSpeaker from "../components/ComingSoon/CSoonSpeaker";
+import ComingSoonAboutSpeaker from "../components/ComingSoon/CSoonAboutSpekear";
 
 
 let props = {
@@ -45,8 +47,10 @@ export default function TETIClass() {
                 <div className="w-[80%] flex flex-col mx-auto my-36 md:my-72">
                     <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">Lectured by</h3>
                     <div className="flex flex-col md:items-center lg:items-start lg:flex-row ">
-                        <Speaker {...props} />
-                        <AboutSpeaker />
+                        {/* <Speaker {...props} /> */}
+                        <ComingSoonSpeaker />
+                        {/* <AboutSpeaker /> */}
+                        <ComingSoonAboutSpeaker />
                     </div>
                 </div>
 
