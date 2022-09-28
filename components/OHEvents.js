@@ -1,13 +1,18 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import FireLogo from '../Assets/Logo/CardLogo/fire.svg'
-import ArcheryTarget from '../Assets/Logo/CardLogo/archeryTarget.svg'
+import ArcheryTarget from '../Assets/Logo/CardLogo/archery-target.svg'
 import NoteLogo from '../Assets/Logo/CardLogo/note.svg'
-import BtnDown from '../Assets/Logo/CardLogo/btnDown.svg'
+import BtnDown from '../Assets/Logo/CardLogo/btn-down.svg'
+
 // Import swiper styles
 import 'swiper/css'
+import 'swiper/css/pagination'
 import Image from 'next/image'
 import Link from 'next/link'
+
+// Import required modules
+import { Keyboard, Pagination } from 'swiper'
 
 const cards = [
   {
@@ -36,55 +41,79 @@ const cards = [
   },
 ]
 
-// TODO: add routing and description for each events
+const shadow = {
+  boxShadow:
+    'inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(0, 0,0, 0.08)',
+}
+const buttonShadow = {
+  boxShadow: '-10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0,0, 0.08)',
+}
+const cardShadow = {
+  boxShadow: '-20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2',
+}
+
 export default function OHEvents() {
   return (
-    <main className="max-w-[1638px] font-Poppins overscreen overflow-x-hidden" id="events">
+    <main
+      className="max-w-[1638px] font-Poppins mediumscreen overflow-x-hidden"
+      id="events"
+    >
       <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]">
         What we Offer
       </h1>
       <Swiper
+        modules={[Pagination, Keyboard]}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        keyboard={{
+          enabled: true,
+        }}
+        grabCursor={true}
         slidesPerView={1.1}
         spaceBetween={2}
-        keyboard={{ enabled: true, onlyInViewport: true }}
         breakpoints={breakpoints}
       >
         {cards.map((card) => {
           const { name, logo, desc, path } = card
           return (
-            <SwiperSlide key={name} className="pt-5 pb-20">
-              <div
-                className="ml-3 last:mr-3 h-[460px] max-w-[334px] rounded-[42px] bg-[#F3F3F3] py-9 px-9 cursor-grab"
-                style={{
-                  boxShadow: '-20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2',
-                }}
-                data-aos="zoom-in-up"
-                data-aos-duration="2000"
-              >
-                <div className="card flex flex-col items-center gap-y-12">
-                  <Image src={logo} alt={`${name} logo`} />
-                  <div>
-                    <p className="mb-1 text-center text-sm leading-6 line-clamp-4">
-                      {desc}
-                    </p>
-                    <h1 className="text-center text-lg font-semibold text-[#505050] leading-7">
-                      {name}
-                    </h1>
-                  </div>
-                  <Link href={path}>
-                    <div className="relative bg-white drop-shadow-xl text-[#93DDDE] text-md rounded-[45px] w-64 h-16 flex items-center justify-between cursor-pointer">
-                      <p className="mr-5 tracking-widest font-bold ml-auto">
-                        View Details
+            <SwiperSlide key={name} className="pt-7 pb-20">
+              {({ isActive }) => (
+                <div
+                  className="ml-4 last:mr-3 h-[460px] max-w-[334px] rounded-[42px] bg-[#F3F3F3] py-9 px-9 cursor-grab"
+                  style={cardShadow}
+                  data-aos="zoom-in-up"
+                  data-aos-duration="2000"
+                >
+                  <div className="card flex flex-col items-center gap-y-12">
+                    <Image src={logo} alt={`${name} logo`} />
+                    <div>
+                      <p className="mb-1 max-w-[245px] text-center text-sm leading-6 line-clamp-4">
+                        {desc}
                       </p>
-                      <Image
-                        src={BtnDown}
-                        alt="view detail button"
-                        className="h-full"
-                      />
+                      <h1 className="text-center text-lg font-semibold text-[#505050] leading-7">
+                        {name}
+                      </h1>
                     </div>
-                  </Link>
+                    <Link href={path}>
+                      <div
+                        className="bg-[#F9F9F9] rounded-[42.5px] h-[66.05px] w-64  flex items-center justify-between cursor-pointer"
+                        style={buttonShadow}
+                      >
+                        <p className="ml-auto mr-3 text-[#93DDDE] text-lg tracking-widest font-bold">
+                          View Details
+                        </p>
+                        <div
+                          style={shadow}
+                          className="h-[66.05px] w-[66.05px] rounded-[42.5px] flex justify-center"
+                        >
+                          <Image src={BtnDown} alt="view detail button" />
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              )}
             </SwiperSlide>
           )
         })}
@@ -102,6 +131,9 @@ const breakpoints = {
   },
   642: {
     slidesPerView: 1.75,
+  },
+  718: {
+    slidesPerView: 2.05,
   },
   882: {
     slidesPerView: 2.25,
