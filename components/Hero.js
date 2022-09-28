@@ -27,7 +27,7 @@ const Hero = () => {
           <Image src="/OpenHouseHero.png" width={3147} height={2000} priority/>
         </div>
       </div>
-      <div className="w-full px-[5%] flex gap-5 lg:gap-16 md:flex-row text-[23px] justify-center items-center flex-col lg:justify-start md:mt-5" data-aos="zoom-in" data-aos-duration="700">
+      <div className="w-full px-[5%] flex gap-5 lg:gap-16 md:flex-row text-[23px] justify-center items-center flex-col lg:justify-start md:mt-5" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700">
         <div
           className="cursor-pointer text-white bg-[#F0ABC0] flex justify-center items-center w-[80%] md:w-[192px] h-[85px] rounded-[15px] shadow-lg"
           onClick={() => {
