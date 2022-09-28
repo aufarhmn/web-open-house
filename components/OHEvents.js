@@ -58,7 +58,7 @@ export default function OHEvents() {
       className="max-w-[1638px] font-Poppins mediumscreen overflow-x-hidden"
       id="events"
     >
-      <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]">
+      <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]" data-aos="fade-up" data-aos-duration="2000">
         What we Offer
       </h1>
       <Swiper

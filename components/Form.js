@@ -41,11 +41,11 @@ const Form = () => {
 
     return (
         <>
-            <div className="lg:columns-2 bg-blue-500 h-screen " id="form">
-            <div className="bg-grey-400 h-screen hidden lg:flex">
+            <div className="grid grid-cols-1 lg:grid-cols-2 bg-blue-500 h-full w-full" id="form">
+            <div className="bg-grey-400 h-full hidden lg:flex">
                
             </div>
-            <div id=" " className="h-screen p-20">
+            <div id=" " className="h-full p-10 sm:p-20">
                 <p className="text-5xl text-white font-Josefin">
                     Register yourself for the amazing thing ahead
                 </p>
@@ -74,7 +74,7 @@ const Form = () => {
                             type="email"
                         />
                     </div>
-                    <div>
+                    <div className="cursor-pointer">
                         <select 
                             name="day"
                             className="w-full p-2 pl-8 mt-7 rounded-xl h-14 text-xl"
@@ -87,7 +87,7 @@ const Form = () => {
                             <option value="2">2</option>
                         </select>
                     </div>
-                    <button type="submit" className="mt-10 h-14 w-1/2 p-auto text-green-300 bg-white rounded-xl text-2xl font-bold font-Montserrat">Submit</button>
+                    <button type="submit" className="mt-10 h-14 w-1/2 p-auto text-green-300 bg-white rounded-xl text-xl sm:text-2xl font-bold font-Montserrat">Submit</button>
                 </form>
             <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>
             </div>
