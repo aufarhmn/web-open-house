@@ -96,7 +96,6 @@ div.swiper-wrapper > div.swiper-slide > div > div > ul {
   justify-content: center;
   gap: 5px;
 }
-
 /* ::-webkit-scrollbar-button:single-button:vertical:decrement {
 	background-image: url('../Assets/Images/Scrollbar/DecrementNormal.png');
 	background-repeat: no-repeat;
