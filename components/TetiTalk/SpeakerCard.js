@@ -3,7 +3,7 @@ import Image from "next/image";
 //TODO: responsive
 export const SpeakerCard = (props) => {
   const benefitsStyle =
-    "bg-[#F3F3F3] rounded-[28px] max-w-[430px] h-min flex flex-col items-center lg:w-max";
+    "bg-[#F3F3F3] rounded-[28px] max-w-[430px] h-min flex flex-col items-center sm:w-[70%] lg:w-max";
   const imgStyle =
     "w-[100%] aspect-square flex justify-center items-end rounded-t-[28px]";
   const shadow = {
