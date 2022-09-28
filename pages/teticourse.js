@@ -9,6 +9,8 @@ import orang from "../Assets/Images/TetiCourse/orang.png";
 import Image from "next/image";
 import Objective from "../components/TetiCourse/Objective";
 import TETICourseBenefits from "../components/TetiCourse/TETICourseBenefits";
+import ComingSoon from "../components/TetiCourse/CSoon";
+import ComingSoonCourse from "../components/TetiCourse/CSoonCourse";
 
 export default function TETICourse() {
     return (
@@ -58,6 +60,15 @@ export default function TETICourse() {
                     />
                 </div>
             </section>
+            <div className="w-[80%] flex flex-col mx-auto my-36 md:my-72">
+                    <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">What you will learn</h3>
+                    <div className="flex flex-col md:items-center lg:items-start lg:flex-row ">
+                        {/* <Speaker {...props} /> */}
+                        <ComingSoon />
+                        {/* <AboutSpeaker /> */}
+                        <ComingSoonCourse />
+                    </div>
+                </div>
             <GetInTouch />
             <Footer />
             <BackToTop />

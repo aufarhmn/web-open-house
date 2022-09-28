@@ -1,12 +1,16 @@
 import Benefits from "../components/TetiClass/Benefits";
 import NavbarSimplified from "../components/NavbarSimplified";
-import Speaker from "../components/TetiClass/Speaker";
 import pakAdha from '../Assets/Images/Speaker/pakAdha.png'
 import Footer from "../components/Footer";
 import GetInTouch from "../components/GetInTouch";
 import BackToTop from "../components/BackToTop";
 import Head from "next/head";
+// Import untuk speaker component yang fix
+import Speaker from "../components/TetiClass/Speaker";
 import AboutSpeaker from "../components/TetiClass/AboutSpekear";
+// Import untuk speaker component yang coming soon
+import ComingSoonSpeaker from "../components/ComingSoon/CSoonSpeaker";
+import ComingSoonAboutSpeaker from "../components/ComingSoon/CSoonAboutSpeaker";
 
 
 let props = {
@@ -45,8 +49,10 @@ export default function TETIClass() {
                 <div className="w-[80%] flex flex-col mx-auto my-36 md:my-72">
                     <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">Lectured by</h3>
                     <div className="flex flex-col md:items-center lg:items-start lg:flex-row ">
-                        <Speaker {...props} />
-                        <AboutSpeaker />
+                        {/* <Speaker {...props} /> */}
+                        {/* <AboutSpeaker /> */}
+                        <ComingSoonSpeaker />
+                        <ComingSoonAboutSpeaker />
                     </div>
                 </div>
 
