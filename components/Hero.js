@@ -27,6 +27,7 @@ const Hero = () => {
           <Image src="/OpenHouseHero.png" width={3147} height={2000} priority/>
         </div>
       </div>
+
       <div className="w-full px-[5%] flex gap-5 xl:gap-16 sm:flex-row text-[23px] justify-center items-center flex-col xl:justify-start md:mt-5">
         <div
           className="cursor-pointer text-white bg-[#F0ABC0] flex justify-center items-center w-[80%] md:w-[192px] md:h-[60px] lg:h-[85px] rounded-[15px] shadow-lg text-[18px] lg:text-[23px] h-[50px] hover:bg-[#ff8eb0]"
