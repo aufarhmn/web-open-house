@@ -27,7 +27,7 @@ export default function FunFacts() {
         >
           {funfacts['funfacts'].map((funfact) => {
             return (
-              <SwiperSlide className="min-h-[500px] p-5 flex items-center justify-center">
+              <SwiperSlide className="min-h-[400px] p-5 flex items-center justify-center">
                 <div className="cursor-grab text-center">
                   <h2 className="text-3xl font-Josefin font-semibold mb-5">
                     {funfact.title || 'About DTETI'}

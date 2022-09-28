@@ -79,21 +79,22 @@
     visibility: hidden;
   }
 }
-section
-  > div
-  > div
-  > div.swiper-wrapper
-  > div.swiper-slide
-  > div
-  > div
-  > ul
-  > li {
+
+div.swiper-wrapper > div.swiper-slide > div > div > ul > li {
   background-color: #9ccff6;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
   border-radius: 10px;
   font-weight: 500;
+}
+
+div.swiper-wrapper > div.swiper-slide > div > div > ul {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
 }
 
 /* ::-webkit-scrollbar-button:single-button:vertical:decrement {
