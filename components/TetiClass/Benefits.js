@@ -18,7 +18,7 @@ export default function Benefits() {
     return(
         <div className="w-[100%] h-full px-16 py-36 md:py-72">
             <div className="grid container mx-auto">
-                    <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]">
+                    <h3 className="text-[58px] font-bold font-Josefin text-[#4f4d4d]" data-aos="fade-up" data-aos-duration="2000">
                         The Benefits
                     </h3>
                     <div className="flex flex-col lg:flex-row justify-between gap-x-10 lg:mx-0 pt-10 md:pt-14 mx-auto" data-aos="zoom-in-up" data-aos-duration="2000">

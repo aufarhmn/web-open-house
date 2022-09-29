@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Title() {
     return (
-        // TODO: Responsive, padding (px)
         <div className="overflow-hidden">
             <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px]" data-aos="fade-up" data-aos-duration="2000">
                 <h1 className="md:text-[134px] text-[72px] font-bold text-[#93DDDE] font-Josefin text-center md:text-left">
