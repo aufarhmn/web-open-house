@@ -7,8 +7,10 @@ export default function Location() {
     return (
         <main className="overflow-x-hidden">
         <div className="flex flex-col lg:flex-row items-center justify-center px-[78px] xl:px-[98px] pt-[98px] sm:pt-[120px] pb-[98px] relative gap-[70px] 2xl:gap-[120px]">
-            <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start" data-aos="fade-right" data-aos-duration="2000">
-                <h2 className="text-[48px] text-[#93DDDE] font-bold lg:text-left text-center">Where Are We Located?</h2>
+            <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start font-Poppins" data-aos="fade-right" data-aos-duration="2000">
+                <h2 className="text-[48px] text-[#93DDDE] font-bold lg:text-left text-center">
+                    Where Are We Located?
+                </h2>
                 <h4 className="text-[22px]  md:w-[600px] lg:w-[450px] xl:w-[500px] mt-[30px] sm:mt-[49px] lg:text-left text-center">
                     Acara Open House Departemen Teknik Elektro dan Teknologi Informasi akan dilaksanakan pada departemen 
                     kami tercinta yang terletak di Provinsi Daerah Istimewa Yogyakarta{" "}
