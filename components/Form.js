@@ -52,8 +52,8 @@ const Form = () => {
                 <p className="text-white font-Montserrat mt-7">
                     Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididuntut labore et.
                 </p>
-                <form onSubmit={ handleSubmit }>
-                    <div className="">
+                <form onSubmit={ handleSubmit } className="grid justify-items-center lg:justify-items-start">
+                    <div className="w-full">
                         <input 
                             name="nama"
                             className="w-full p-8 mt-11 rounded-xl h-14 text-xl"
@@ -63,7 +63,7 @@ const Form = () => {
                             required
                         /> 
                     </div>
-                    <div className="">
+                    <div className="w-full">
                         <input 
                             name="email"
                             className="w-full p-8 mt-7 rounded-xl h-14 text-xl"
@@ -74,7 +74,7 @@ const Form = () => {
                             type="email"
                         />
                     </div>
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer w-full">
                         <select 
                             name="day"
                             className="w-full p-2 pl-8 mt-7 rounded-xl h-14 text-xl"
@@ -87,7 +87,9 @@ const Form = () => {
                             <option value="2">2</option>
                         </select>
                     </div>
-                    <button type="submit" className="mt-10 h-14 w-1/2 p-auto text-green-300 bg-white rounded-xl text-xl sm:text-2xl font-bold font-Montserrat">Submit</button>
+                    <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-green-300 hover:text-white bg-white hover:bg-green-300 rounded-xl text-xl lg:text-2xl font-bold font-Montserrat duration-200">
+                        Submit
+                    </button>              
                 </form>
             <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>
             </div>
