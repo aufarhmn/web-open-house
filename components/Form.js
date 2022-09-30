@@ -4,6 +4,7 @@ import { db } from "../firebase/firebase.js";
 import SubEventModal from "./SubEventModal";
 import { useState } from "react";
 import { FormPopUp } from "./FormPopUp.js";
+import { FaSpinner } from "react-icons/fa";
 
 const Form = () => {
     const [name, setName] = React.useState("");
@@ -11,9 +12,11 @@ const Form = () => {
     const [day, setDay] = React.useState("");
     const [showPopUp, setShowPopUp] = useState(false);
     const [submitError, setSubmitError] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const dbReff = collection(db, "form-data");
 
     const handleSubmit = (e) => {
+        setIsLoading(true);
         e.preventDefault();
         addDoc(dbReff, {
             name: name,
@@ -23,6 +26,7 @@ const Form = () => {
         .then(() => {
             console.log("Document successfully written!");
             setShowPopUp(true);
+            setIsLoading(false);
         })
         .catch((error) => {
             console.log(error.message);
@@ -88,7 +92,7 @@ const Form = () => {
                         </select>
                     </div>
                     <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-green-300 hover:text-white bg-white hover:bg-green-300 rounded-xl text-xl lg:text-2xl font-bold font-Montserrat duration-200">
-                        Submit
+                        {isLoading ? <FaSpinner className="animate-spin mx-auto" /> : "Submit"}
                     </button>              
                 </form>
             <FormPopUp showPopUp={showPopUp} submitError={submitError} closePopUp={closePopUp}/>

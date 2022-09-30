@@ -3,6 +3,7 @@ import { GetInTouchPopUp } from "./GetInTouchPopUp.js";
 import React from "react";
 import { useState } from "react";
 import { db } from "../firebase/firebase.js";
+import { FaSpinner } from "react-icons/fa";
 
 const GetInTouch = () => {
   const [name, setName] = React.useState("");
@@ -10,10 +11,12 @@ const GetInTouch = () => {
   const [message, setMessage] = React.useState("");
   const [showPopUp, setShowPopUp] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const dbReff = collection(db, "get-in-touch");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     addDoc(dbReff, {
       name: name,
@@ -22,6 +25,7 @@ const GetInTouch = () => {
     })
       .then(() => {
         setShowPopUp(true);
+        setIsLoading(false);
       })
       .catch((error) => {
         setSubmitError(true);
@@ -85,13 +89,14 @@ const GetInTouch = () => {
             </div>
             <div className="pt-10">
               <button className="text-xl py-4 lg:py-4 px-5 lg:px-10 rounded-xl bg-green-300 hover:bg-[#12ABAA] text-xl text-white" type="submit">
-                Get In Touch
+                
+                {isLoading ? <FaSpinner className="animate-spin mx-auto" /> : "Get In Touch"}
               </button>
             </div>
           </form>
-          <GetInTouchPopUp getInTouchPopUpShowPopUp={showPopUp} getInTouchPopUpSubmitError={submitError} getInTouchPopUpClosePopUp={closePopUp}/>
         </div>
       </div>
+      <GetInTouchPopUp getInTouchPopUpShowPopUp={showPopUp} getInTouchPopUpSubmitError={submitError} getInTouchPopUpClosePopUp={closePopUp}/>
     </div>
   );
 };
