@@ -45,7 +45,7 @@ export const SpeakerCard = (props) => {
             </p>
           </div> */}
         </div>
-        <div className="max-w-[646px] font-Poppins flex flex-col justify-evenly" data-aos="fade-left" data-aos-duration="2000">
+        <div className="max-w-[646px] lg:h-[500px] font-Poppins flex flex-col justify-evenly" data-aos="fade-left" data-aos-duration="2000">
           {/* <h2 className="text-[32px] font-bold">{props.name}</h2>
           <p className="text-[24.22px] mt-10">{props.desc}</p>
           <p className="text-[24.22px] mt-10">
