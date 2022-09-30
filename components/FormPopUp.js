@@ -3,16 +3,21 @@ import { collection, getDocs } from "firebase/firestore";
 import { FaCheckCircle } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoMdCloseCircle } from "react-icons/io";
-
-var data;
-const getInv = await getDocs(collection(db, "links"));
-getInv.forEach((doc) => {
-  data = doc.data();
-});
+import { useState } from "react";
 
 export const FormPopUp = (props) => {
+  const [linksData, setLinksData] = useState([]);
   const show = props.showPopUp;
   const isError = props.submitError;
+
+  const getLinks = async () => {
+    const getInv = await getDocs(collection(db, "links"));
+    var data = getInv.docs.map((doc) => doc.data());
+
+    setLinksData(data);
+  };
+
+  getLinks();
 
   //TODO : Responsive, Design (Icons + Layout), Scroll Lock, Message Text(?)
 
@@ -55,10 +60,14 @@ export const FormPopUp = (props) => {
             {isError ? null : (
               <>
                 <p className="px-10" data-aos="fade-right" data-aos-delay="150">Silahkan bergabung di grup whatsapp ini</p>
-                <a className="text-blue-400" href={data.inv} data-aos="fade-right" data-aos-delay="200">
-                  {" "}
-                  {data.inv}{" "}
-                </a>
+                {linksData.map((link, index) => {
+                  return (
+                    <a className="text-blue-400" href={link.inv} data-aos="fade-right" data-aos-delay="200">
+                    {" "}
+                    {link.inv}{" "}
+                    </a>
+                  );
+                })}
               </>
             )}
           </div>
