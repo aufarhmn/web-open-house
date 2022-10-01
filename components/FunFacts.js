@@ -30,7 +30,7 @@ export default function FunFacts() {
               <SwiperSlide className="min-h-[550px] sm:min-h-[400px] p-5 flex items-center justify-center">
                 <div className="cursor-grab text-center">
                   <h2 className="text-3xl font-Josefin font-semibold mb-5">
-                    {funfact.title || 'About DTETI'}
+                    {funfact.title}
                   </h2>
                   <div className="font-Poppins md:text-2xl max-w-xl text-lg">
                     {parse(funfact.desc)}

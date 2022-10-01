@@ -3,21 +3,26 @@ import { collection, getDocs } from "firebase/firestore";
 import { FaCheckCircle } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoMdCloseCircle } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const FormPopUp = (props) => {
   const [linksData, setLinksData] = useState([]);
+  const [linkLimit, setLinkLimit] = useState(true);
   const show = props.showPopUp;
   const isError = props.submitError;
 
   const getLinks = async () => {
     const getInv = await getDocs(collection(db, "links"));
     var data = getInv.docs.map((doc) => doc.data());
-
     setLinksData(data);
   };
 
-  getLinks();
+  useEffect(() => {
+    if (linkLimit === true) {
+      getLinks();
+      setLinkLimit(false);
+    }
+  }, [linkLimit]);
 
   //TODO : Responsive, Design (Icons + Layout), Scroll Lock, Message Text(?)
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { db } from "../firebase/firebase.js";
 import { collection, getDocs } from "firebase/firestore";
@@ -8,6 +8,7 @@ const styleA = "font-Josefin font-light text-xl pb-10"
 
 const DaftarFAQ = () => {
     const [faqData, setFaqData] = useState([]);
+    const [fetchLimit, setFetchLimit] = useState(true);
 
     const getFaq = async () => {
         const faqRef = collection(db, "faq-details");
@@ -16,8 +17,14 @@ const DaftarFAQ = () => {
         setFaqData(data);
     };
 
-    getFaq();
-
+    useEffect(() => {
+    if (fetchLimit === true){
+        getFaq();
+        setFetchLimit(false);
+    }
+    }, [fetchLimit]);
+    
+    
     return (
         <div className="w-full h-full grid content-center px-16 py-[100px] bg-white">
             <div className="container mx-auto space-y-5">
