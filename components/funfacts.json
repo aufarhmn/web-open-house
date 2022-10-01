@@ -2,73 +2,33 @@
   "funfacts": [
     {
       "topic": "general",
+      "title": "Akreditasi",
       "desc": "Tidak hanya mendapat akreditasi unggul dari BAN-PT, program studi Teknik Elektro dan Teknologi Informasi juga mendapat akreditasi internasional dari ABET dan IABEE."
     },
     {
       "topic": "general",
-      "desc": "Bekerja sama dengan beberapa perusahaan berskala internasional salah satunya adalah Schneider Electric, sehingga tak heran terdapat laboratorium milik perusahaan tersebut di kampus DTETI."
+      "title": "Kerja Sama",
+      "desc": "Bekerja sama dengan beberapa perusahaan berskala internasional seperti Schneider Electric, Infineon, Cisco, Microsoft, Honeywell, Rolls Royce, dan lain-lain."
     },
     {
       "topic": "general",
+      "title": "Program Studi",
       "desc": "Satu-satunya departemen di Fakultas Teknik yang memiliki tiga program studi di tingkat sarjana, yaitu program studi Teknik Elektro, Teknologi Informasi, dan Teknik Biomedis."
     },
     {
       "topic": "general",
-      "desc": "DTETI baru saja mengadakan workshop untuk penelitian Microgrid Technologies for Remote Islands sebagai kerja sama UGM dengan Aalborg University Denmark, University of Southern Denmark, Kementerian ESDM RI, PT PLN, Pemerintah NTB, dan Danish International Development Agency."
-    },
-    {
-      "topic": "general",
+      "title": "grades...",
       "desc": "hard to get good grades, but it's possible. we're not frighten you, we encourage you instead 😄."
     },
     {
-      "topic": "ti",
-      "title": "Apa itu Teknologi Informasi",
-      "desc": "Teknologi Informasi merupakan program studi yang mempelajari solusi untuk permasalahan informasi yang diselesaikan menggunakan teknologi dan diterapkan di berbagai bidang seperti pemerintahan, kesehatan, pendidikan, dan pengembangan bisnis."
-    },
-    {
-      "topic": "ti",
-      "title": "Kenapa TI DTETI?",
-      "desc": "Program Studi Teknologi Informasi DTETI menawarkan proses pembelajaran yang dirancang agar mahasiswa dapat memberikan bekal keahlian yang menyeluruh bagi mahasiswa sehingga mereka mempunyai kompetensi dasar untuk semua bidang keteknikan dan informasi."
-    },
-    {
-      "topic": "ti",
-      "title": "Mata Kuliah TI",
-      "desc": "<ul><li style='padding-inline: 10px'>Pemrograman Dasar</li><li style='padding-inline: 10px'>Kalkulus Variabel Tunggal</li><li style='padding-inline: 10px'>Kalkulus Variabel Jamak</li><li style='padding-inline: 10px'>Matematika Diskrit</li><li style='padding-inline: 10px'>Teori Vektor dan Matriks</li><li style='padding-inline: 10px'>Aljabar Linear</li><li style='padding-inline: 10px'>Analisis Variabel Kompleks</li><li style='padding-inline: 10px'>Pemrograman Berbasis Objek</li><li style='padding-inline: 10px'>Arsitektur Komputer</li><li style='padding-inline: 10px'>Kecerdasan Buatan</li></ul>"
+      "topic": "general",
+      "title": "Mata Pelajaran SMA Terkait",
+      "desc": "<ul><li style='padding-inline: 10px'>Matematika</li><li style='padding-inline: 10px'>Fisika</li><li style='padding-inline: 10px'>Bahasa Inggris</li><li style='padding-inline: 10px'>Penulisan Ilmiah</li>"
     },
     {
       "topic": "ti",
       "title": "Karakter Siswa",
-      "desc": "<ul><li style='padding-inline: 10px'>Jujur</li><li style='padding-inline: 10px'>Tekun</li><li style='padding-inline: 10px'>Rajin</li><li style='padding-inline: 10px'>Kritis</li><li style='padding-inline: 10px'>Objektif</li><li style='padding-inline: 10px'>Senang riset</li><li style='padding-inline: 10px'>Berintegritas</li>"
-    },
-    {
-      "topic": "ti",
-      "title": "Prospek kerja TI",
-      "desc": "<ul><li style='padding-inline: 10px'>Data Scientist</li><li style='padding-inline: 10px'>Data Engineer</li><li style='padding-inline: 10px'>AI Researcher</li><li style='padding-inline: 10px'>Software Engineer</li><li style='padding-inline: 10px'>Server Engineer</li><li style='padding-inline: 10px'>IT Consultant</li><li style='padding-inline: 10px'>App Developer</li><li style='padding-inline: 10px'>Web Developer</li>"
-    },
-    {
-      "topic": "tb",
-      "title": "Apa itu Teknik Biomedis",
-      "desc": "Teknik Biomedis adalah program studi yang menggabungkan kemampuan engineer, terlebih dalam bidang teknologi, terhadap ilmu medis dan biologis sehingga dapat menciptakan atau mengembangkan peralatan serta metode-metode baru untuk memudahkan diagnosis dan ilmu kesehatan."
-    },
-    {
-      "topic": "tb",
-      "title": "Kenapa TB DTETI?",
-      "desc": "idk either hehehe"
-    },
-    {
-      "topic": "tb",
-      "title": "Mata Kuliah TB",
-      "desc": "<ul><li style='padding-inline: 10px'>Matematika Diskrit</li><li style='padding-inline: 10px'>Anatomi dan Fisiologi</li><li style='padding-inline: 10px'>Isyarat dan Sistem</li><li style='padding-inline: 10px'>Sensor dan Transduser</li><li style='padding-inline: 10px'>Elektronika Dasar</li><li style='padding-inline: 10px'>Teknik Biomagnetika</li><li style='padding-inline: 10px'>Teknik Biomagnetika</li><li style='padding-inline: 10px'>Teknik Biomekanika</li><li style='padding-inline: 10px'>Teknik Pengolahan Citra Biomedis</li></ul>"
-    },
-    {
-      "topic": "tb",
-      "title": "Karakter Siswa",
-      "desc": "<ul><li style='padding-inline: 10px'>Teliti</li><li style='padding-inline: 10px'>Tekun</li><li style='padding-inline: 10px'>Rasional</li><li style='padding-inline: 10px'>Kritis</li><li style='padding-inline: 10px'>Senang riset</li><li style='padding-inline: 10px'>Senang menganalisis</li>"
-    },
-    {
-      "topic": "tb",
-      "title": "Prospek kerja TB",
-      "desc": "<ul><li style='padding-inline: 10px'>Tenaga ahli mitra kesehatan</li><li style='padding-inline: 10px'>Industri peralatan medis</li><li style='padding-inline: 10px'>Teknisi peralatan medis</li><li style='padding-inline: 10px'>Peneliti/Ilmuwan</li><li style='padding-inline: 10px'>Dosen/Tenaga Kependidikan</li></ul>"
+      "desc": "<ul><li style='padding-inline: 10px'>Teliti</li><li style='padding-inline: 10px'>Rasional</li><li style='padding-inline: 10px'>Kritis</li><li style='padding-inline: 10px'>Senang menganalisis</li><li style='padding-inline: 10px'>Jujur</li><li style='padding-inline: 10px'>Tekun</li><li style='padding-inline: 10px'>Rajin</li><li style='padding-inline: 10px'>Objektif</li><li style='padding-inline: 10px'>Senang riset</li><li style='padding-inline: 10px'>Berintegritas</li>"
     }
   ]
 }
