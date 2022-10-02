@@ -35,3 +35,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Vercel URL
 https://web-open-house.vercel.app/
+https://web-open-house.vercel.app/
+https://web-open-house.vercel.app/
