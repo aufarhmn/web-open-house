@@ -4,6 +4,7 @@ import FireLogo from '../Assets/Logo/CardLogo/fire.svg'
 import ArcheryTarget from '../Assets/Logo/CardLogo/archery-target.svg'
 import NoteLogo from '../Assets/Logo/CardLogo/note.svg'
 import BtnDown from '../Assets/Logo/CardLogo/btn-down.svg'
+import MicLogo from '../Assets/Logo/CardLogo/mic.svg'
 
 // Import swiper styles
 import 'swiper/css'
@@ -36,7 +37,7 @@ const cards = [
   {
     name: 'TETI Talk',
     desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
-    logo: FireLogo,
+    logo: MicLogo,
     path: '/tetitalk',
   },
 ]
@@ -58,7 +59,11 @@ export default function OHEvents() {
       className="max-w-[1638px] font-Poppins mediumscreen overflow-x-hidden"
       id="events"
     >
-      <h1 className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]" data-aos="fade-up" data-aos-duration="2000">
+      <h1
+        className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         What we Offer
       </h1>
       <Swiper

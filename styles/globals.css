@@ -70,7 +70,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 888px) {
+@media only screen and (min-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
     visibility: visible;
