@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
     return (
         <main className="overflow-x-hidden">
-            <div className="w-full h-full px-7 sm:px-10 md:px-16 pt-[209px] pb-[175px] bg-white" id="about">
+            <div className="w-full h-full px-7 sm:px-10 md:px-16 pt-32 md:pt-40 lg:pt-[209px] pb-[175px] bg-white" id="about">
                 <div className="grid container mx-auto space-y-16 font-Poppins text-center">
                     <h2 className="text-[40px] leading-tight sm:text-5xl sm:leading-tight font-bold text-black-100" data-aos="zoom-in" data-aos-duration="2000">
                         About Open House
