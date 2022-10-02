@@ -1,5 +1,5 @@
 import Image from "next/image";
-import userIcon from "../../Assets/Images/Speaker/userIcon.png";
+import userIcon from "../../Assets/Images/Speaker/usericon.png";
 
 
 //TODO: responsive
