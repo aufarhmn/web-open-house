@@ -1,4 +1,4 @@
-import { Navigation, Pagination } from 'swiper'
+import { Keyboard, Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import parse from 'html-react-parser'
 
@@ -13,14 +13,26 @@ import funfacts from './funfacts.json'
 export default function FunFacts() {
   return (
     <section id="funfact">
-      <h2 className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93DDDE] text-[35px] md:text-[45px] max-w-[630px]" data-aos="fade-up" data-aos-duration="2000">
+      <h2
+        className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93DDDE] text-[35px] md:text-[45px] max-w-[630px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         Some random fun facts about our department
       </h2>
-      <div className="overflow-x-hidden max-w-5xl mx-auto mt-10 mb-20 border-4 sm:border-8 border-[#2FA4FF] rounded-[40px] bg-gray-100" data-aos="fade-up" data-aos-duration="2000">
+      <div
+        className="overflow-x-hidden max-w-5xl mx-auto mt-10 mb-20 border-4 sm:border-8 border-[#2FA4FF] rounded-[40px] bg-gray-100"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <Swiper
           // install Swiper modules
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Keyboard]}
           slidesPerView={1}
+          grabCursor={true}
+          keyboard={{
+            enabled: true,
+          }}
           navigation
           pagination
           className="max-w-4xl"
