@@ -27,12 +27,12 @@ export default function FunFacts() {
         >
           {funfacts['funfacts'].map((funfact, index) => {
             return (
-              <SwiperSlide className="min-h-[550px] sm:min-h-[400px] p-5 flex items-center justify-center">
+              <SwiperSlide className="min-h-[550px] sm:min-h-[400px] p-5 flex items-center justify-center" key={index}>
                 <div className="cursor-grab text-center">
-                  <h2 className="text-3xl font-Josefin font-semibold mb-5" key={index}>
+                  <h2 className="text-3xl font-Josefin font-semibold mb-5">
                     {funfact.title}
                   </h2>
-                  <div className="font-Poppins md:text-2xl max-w-xl text-lg" key={index}>
+                  <div className="font-Poppins md:text-2xl max-w-xl text-lg">
                     {parse(funfact.desc)}
                   </div>
                 </div>
