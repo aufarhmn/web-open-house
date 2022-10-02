@@ -83,9 +83,11 @@ const Form = () => {
                         >
                             <option value="" disabled selected hidden className="text-grey-400">Select Event</option>
                             <option value="TETI Fair">TETI Fair</option>
-                            <option value="TETI Course">TETI Course</option>
                             <option value="TETI Class">TETI Class</option>
                             <option value="TETI Talk">TETI Talk</option>
+                            <option value="TETI Course - Web Dev">TETI Course - Website Development</option>
+                            <option value="TETI Course - UI/UX">TETI Course - UI/UX</option>
+                            <option value="TETI Course - Robotika">TETI Course - Robotika</option>
                         </select>
                         <p className="text-white font-Montserrat mt-7 md:text-left text-center">
                             If you want to choose multiple events, please fill this form multiple times.
