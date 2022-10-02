@@ -32,7 +32,7 @@ export default function FunFacts() {
                   <h2 className="text-3xl font-Josefin font-semibold mb-5" key={index}>
                     {funfact.title}
                   </h2>
-                  <div className="font-Poppins md:text-2xl max-w-xl text-lg">
+                  <div className="font-Poppins md:text-2xl max-w-xl text-lg" key={index}>
                     {parse(funfact.desc)}
                   </div>
                 </div>
