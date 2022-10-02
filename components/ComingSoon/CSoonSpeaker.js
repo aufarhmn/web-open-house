@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import userIcon from '/Assets/Images/Speaker/userIcon.png'
+import userIcon from '../../Assets/Images/Speaker/userIcon.png'
 
 
 const benefitsStyle = "bg-[#F3F3F3] rounded-[28px] w-[430px] h-[60vh] md:h-[592px] flex flex-col items-center "
