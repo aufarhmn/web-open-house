@@ -67,7 +67,7 @@ export const FormPopUp = (props) => {
                 <p className="px-10" data-aos="fade-right" data-aos-delay="150">Silahkan bergabung di grup whatsapp ini</p>
                 {linksData.map((link, index) => {
                   return (
-                    <a className="text-blue-400" href={link.inv} data-aos="fade-right" data-aos-delay="200">
+                    <a className="text-blue-400" href={link.inv} data-aos="fade-right" data-aos-delay="200" key={index}>
                     {" "}
                     {link.inv}{" "}
                     </a>
