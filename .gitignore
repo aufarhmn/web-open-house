@@ -29,6 +29,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# firebase
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+firebase-debug.log
+
 # local env files
 .env*.local
 .env
