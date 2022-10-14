@@ -97,7 +97,7 @@ const Form = () => {
                             If you want to choose multiple events, please fill this form multiple times.
                         </p>
                     </div>
-                    <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-green-300 hover:text-white bg-white hover:bg-green-300 rounded-xl text-xl lg:text-2xl font-bold font-Montserrat duration-200 bg-white-100">
+                    <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-green-300 hover:text-white bg-white hover:bg-green-300 rounded-xl text-xl lg:text-2xl font-bold font-Montserrat duration-200 bg-white">
                         {isLoading ? <FaSpinner className="animate-spin mx-auto" /> : "Submit"}
                     </button>              
                 </form>

@@ -13,7 +13,7 @@ const shadow = {
 export const CardLearn = ({picture, title, mentor, description}) => {
     return(
         <div 
-        className="bg-white-100 w-full md:w-4/5 xl:w-5/12 min-w-[520px] h-full flex-row flex rounded-3xl p-5 gap-5 " 
+        className="bg-white w-full md:w-4/5 xl:w-5/12 min-w-[520px] h-full flex-row flex rounded-3xl p-5 gap-5 " 
         data-aos="fade-up"
         data-aos-duration="700" 
         style={shadow}>
