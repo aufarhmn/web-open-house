@@ -47,7 +47,7 @@ const GetInTouch = () => {
 
   return (
     <div className="w-full h-full bg-white px-16 py-20">
-      <div className="grid container mx-auto text-center font-Montserrat font-bold text-[45px]" data-aos="fade-up" data-aos-duration="2000">
+      <div className="grid container mx-auto text-center font-Montserrat font-bold text-[45px]">
         <h1>
           Missing Something from Us?
         </h1>
@@ -56,7 +56,7 @@ const GetInTouch = () => {
             Our Team are happy to help you :D
           </h3>
         </div>
-        <div className="w-full flex justify-center" data-aos="fade-up" data-aos-duration="2000">
+        <div className="w-full flex justify-center">
           <form onSubmit={handleSubmit}>
             <div className="w-[250px] sm:w-[300px] md:w-[400px] lg:w-full flex flex-col lg:flex-row space-y-10 lg:space-y-0 space-x-0 lg:space-x-10 xl:space-x-14">
               <input

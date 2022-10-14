@@ -47,11 +47,7 @@ const Form = () => {
             <div className="bg-grey-400 h-full hidden lg:flex">
                
             </div>
-            <div id=" " className="h-full p-10 sm:p-20"  
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-delay="500"
-            >
+            <div id=" " className="h-full p-10 sm:p-20">
                 <p className="text-5xl text-white font-Josefin">
                     Register yourself for the amazing thing ahead
                 </p>
