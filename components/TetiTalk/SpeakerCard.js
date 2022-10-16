@@ -1,7 +1,6 @@
 import Image from "next/image";
 import userIcon from "../../Assets/Images/Speaker/usericon.png";
 
-
 //TODO: responsive
 export const SpeakerCard = (props) => {
   const benefitsStyle =

@@ -1,7 +1,3 @@
-import { useEffect, useMemo, useState } from "react";
-import { IoArrowUpCircleSharp } from "react-icons/io5";
-import { BsFillArrowUpSquareFill, BsArrowUpSquareFill } from "react-icons/bs";
-import clsx from "clsx";
 import Image from "next/image";
 
 export default function Objective({

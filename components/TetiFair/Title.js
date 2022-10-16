@@ -20,7 +20,7 @@ export default function Title() {
                         </h2>
                     </div>
                     <div className="h-[60%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
-                        <p className="w-[90%]">Teti Class merupakan kegiatan berupa online class salah satu mata kuliah di DTETI. Para siswa akan diajak untuk merasakan secara langsung pengalaman berkuliah di DTETI. Dengan adanya kegiatan ini diharapkan dapat menjawab rasa penasaran peserta dengan proses pembelajaran.</p>
+                        <p className="w-[90%]">Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi mulai dari program studinya sampai kegiatan kemahasiswaan</p>
                     </div>
                 </div>
             </div>

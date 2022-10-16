@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { AiOutlineInstagram, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
-import { MdFacebook } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
