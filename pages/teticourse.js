@@ -6,7 +6,6 @@ import Head from "next/head";
 import podium from "../Assets/Images/TetiCourse/podium.png";
 import love from "../Assets/Images/TetiCourse/love.png";
 import orang from "../Assets/Images/TetiCourse/orang.png";
-import Image from "next/image";
 import Objective from "../components/TetiCourse/Objective";
 import TETICourseBenefits from "../components/TetiCourse/TETICourseBenefits";
 import Learn from "../components/TetiCourse/Learn";
@@ -36,7 +35,7 @@ export default function TETICourse() {
                     </div>
                 </div>
                 <TETICourseBenefits />
-            <section className="objective">
+                <section className="objective">
                 <div className="flex flex-col items-center md:items-start justify-start overflow-hidden relative px-[40px] md:px-[100px] lg:px-[150px] pt-[130px] pb-[90px]">
                     <h4 className="text-[56px] font-bold text-[#1F1F1F] md:text-left text-center">
                         TETI Course Objective
