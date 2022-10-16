@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import DeanMessage from '../components/FunFacts'
 import BackToTop from '../components/BackToTop'
 import OHEvents from '../components/OHEvents'
 import Footer from '../components/Footer'
