@@ -13,7 +13,7 @@ export default function About() {
                         yang bertujuan untuk memperkenalkan DTETI ke masyarakat luas khususnya kepada siswa/i yang akan 
                         melanjutkan studinya ke perguruan tinggi. Open House DTETI 2022 mengangkat tema TETIZONE 
                         serta tagline “Break the Encryption, Unveil your Passion”. Rangkaian acara yang diadakan pada event ini 
-                        yaitu Teti Fair, Teti Class, Teti Course, dan juga Teti Talk.
+                        yaitu TETI Fair, TETI Class, TETI Course, dan juga TETI Talk
                     </p>
                 </div>
             </div>

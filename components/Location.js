@@ -12,8 +12,8 @@ export default function Location() {
                     Where Are We Located?
                 </h2>
                 <h4 className="text-[22px]  md:w-[600px] lg:w-[450px] xl:w-[500px] mt-[30px] sm:mt-[49px] lg:text-left text-center">
-                    Acara Open House Departemen Teknik Elektro dan Teknologi Informasi akan dilaksanakan pada departemen 
-                    kami tercinta yang terletak di Provinsi Daerah Istimewa Yogyakarta{" "}
+                    Acara Open House DTETI akan dilaksanakan di Departemen
+                    Teknik Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada{" "}
                 </h4>
                 <h5 className="text-[20px]  md:w-[600px] lg:w-[450px] font-bold text-[#545454] mt-[60px] lg:text-left text-center">
                     Jl. Grafika No.2, Yogyakarta, Sendowo, Sinduadi, Kec. Mlati, Kota Yogyakarta, Daerah Istimewa Yogyakarta
