@@ -10,6 +10,7 @@ const imgStyle = "w-1/2 flex rounded-full h-72"
 const shadow = {
     boxShadow: "-13.1635px -13.1635px 32.9088px #FFFFFF, 13.1635px 13.1635px 32.9088px #D2D2D2"
 }
+
 export const CardLearn = ({picture, title, mentor, description}) => {
     return(
         <div 
@@ -36,9 +37,6 @@ export const CardLearn = ({picture, title, mentor, description}) => {
 }
 
 export default function Learn() {
-    
-
-
     return(
         <>
             <CardLearn
