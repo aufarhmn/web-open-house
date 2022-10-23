@@ -4,7 +4,7 @@ import Title from "../components/TetiFair/Title";
 import NavbarSimplified from "../components/NavbarSimplified";
 import StandFor from "../components/TetiFair/StandFor";
 import GetInTouch from "../components/GetInTouch";
-import Benefits from "../components/TetiClass/Benefits";
+import TETIFairBenefits from "../components/TetiFair/TETIFairBenefits";
 import Head from "next/head";
 
 export default function TETIFair() {
@@ -15,7 +15,7 @@ export default function TETIFair() {
             </Head>
             <NavbarSimplified />
             <Title />
-            <Benefits />
+            <TETIFairBenefits />
             <StandFor />
             <GetInTouch />
             <Footer />

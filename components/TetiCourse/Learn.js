@@ -42,18 +42,18 @@ export default function Learn() {
             <CardLearn
                 picture={arduino}
                 title="Robotics"
-                mentor="Ahmad Ataka"
-                description="We believe in long term orientation with our diversified business model thus making us stand out in the industry" />
+                mentor="Coming Soon"
+                description="Peserta mendapatkan pengetahuan mengenai pemrograman robot menggunakan Arduino. Setelah mengikuti kegiatan ini, peserta diharapkan dapat mensimulasikan gerakan sederhana pada robot" />
             <CardLearn
                 picture={webdev}
                 title="Web Development"
-                mentor="Ridi Ferdian"
-                description="Para peserta akan belajar mengenai alur mengembangkan dan membuat web secara terstruktur bersama dengan dosen berpengalaman." />
+                mentor="Coming Soon"
+                description="Peserta mendapatkan pengetahuan mengenai Basic HTML dan CSS. Setelah mengikuti kegiatan ini, peserta diharapkan dapat mengembangkan sebuah website sederhana" />
             <CardLearn
                 picture={uiux}
                 title="UI/UX"
-                mentor="Sigit Basuki"
-                description="We believe in long term orientation with our diversified business model thus making us stand out in the industry" />
+                mentor="Coming Soon"
+                description="Peserta dapat mengetahui fitur-fitur Figma dan penggunaannya. Setelah mengikuti kegiatan ini, peserta diharapkan dapat memahami Basic UX Knowledge dan implementasinya" />
         </>
            
     )

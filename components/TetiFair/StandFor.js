@@ -40,16 +40,13 @@ export default function StandFor() {
                             Apa itu Teknik Elektro?
                         </h5>
                         <p className={styleDescription}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            Teknik Elektro (TE) merupakan cabang ilmu teknik yang meliputi Teknik Tenaga Listrik, Teknik Kendali dan Instumentasi, Robotika dan Automasi, Isyarat (signal) dan sistem, Teknik Telekomunikasi, Teknik Komputer dan perangkat keras terus berkembang seiring peradaban manusia yang menjadi puncak-puncak teknologi di setiap masa. 
                         </p>
                         <h5 className={styleSubTitle}>
                             Kenapa TE DTETI?
                         </h5>
                         <p className={styleDescription}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            Teknik Elektro UGM telah mendapatkan akreditasi internasional dengan kurikulum dan alumni yang mendukung.
                         </p>
                     </div>
                     <div className="grid justify-items-center">
@@ -67,7 +64,7 @@ export default function StandFor() {
                             Apa itu Teknologi Informasi?
                         </h5>
                         <p className={styleDescription}>
-                            Teknologi Informasi merupakan program studi yang mempelajari solusi untuk permasalahan informasi yang diselesaikan menggunakan
+                            Teknologi Informasi (TIF) merupakan program studi yang mempelajari solusi untuk permasalahan informasi yang diselesaikan menggunakan
                             teknologi dan diterapkan di berbagai bidang seperti pemerintahan, kesehatan, pendidikan, dan pengembangan bisnis.
                         </p>
                         <h5 className={styleSubTitle}>
@@ -100,9 +97,7 @@ export default function StandFor() {
                             Kenapa TB DTETI?
                         </h5>
                         <p className={styleDescription}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        Bagi teman-teman yang ingin berkuliah di teknik tetapi juga ingin mempelajari ilmu kedokteran, Teknik Biomedis dapat menjadi solusi untuk teman-teman.
                         </p>
                     </div>
                 </div>
