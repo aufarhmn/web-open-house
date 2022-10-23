@@ -10,6 +10,7 @@ const imgStyle = "w-1/2 flex rounded-full h-72"
 const shadow = {
     boxShadow: "-13.1635px -13.1635px 32.9088px #FFFFFF, 13.1635px 13.1635px 32.9088px #D2D2D2"
 }
+
 export const CardLearn = ({picture, title, mentor, description}) => {
     return(
         <div 
@@ -36,26 +37,23 @@ export const CardLearn = ({picture, title, mentor, description}) => {
 }
 
 export default function Learn() {
-    
-
-
     return(
         <>
             <CardLearn
                 picture={arduino}
                 title="Robotics"
-                mentor="Ahmad Ataka"
-                description="We believe in long term orientation with our diversified business model thus making us stand out in the industry" />
+                mentor="Coming Soon"
+                description="Peserta mendapatkan pengetahuan mengenai pemrograman robot menggunakan Arduino. Setelah mengikuti kegiatan ini, peserta diharapkan dapat mensimulasikan gerakan sederhana pada robot" />
             <CardLearn
                 picture={webdev}
                 title="Web Development"
-                mentor="Ridi Ferdian"
-                description="Para peserta akan belajar mengenai alur mengembangkan dan membuat web secara terstruktur bersama dengan dosen berpengalaman." />
+                mentor="Coming Soon"
+                description="Peserta mendapatkan pengetahuan mengenai Basic HTML dan CSS. Setelah mengikuti kegiatan ini, peserta diharapkan dapat mengembangkan sebuah website sederhana" />
             <CardLearn
                 picture={uiux}
                 title="UI/UX"
-                mentor="Sigit Basuki"
-                description="We believe in long term orientation with our diversified business model thus making us stand out in the industry" />
+                mentor="Coming Soon"
+                description="Peserta dapat mengetahui fitur-fitur Figma dan penggunaannya. Setelah mengikuti kegiatan ini, peserta diharapkan dapat memahami Basic UX Knowledge dan implementasinya" />
         </>
            
     )

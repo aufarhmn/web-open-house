@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavbarSimplified from "../components/NavbarSimplified";
-import Benefits from "../components/TetiClass/Benefits";
+import TETITalkBenefits from "../components/TetiTalk/TETITalkBenefits";
 import { SpeakerCard } from "../components/TetiTalk/SpeakerCard";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
@@ -55,7 +55,7 @@ export default function TETITalk() {
                         <p className="w-[90%]">Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus.</p>
                     </div>
                 </div>
-        <Benefits />
+        <TETITalkBenefits />
         <div className="mx-auto w-[80%]">
           <h1 className="text-[40px] sm:text-[58.5px] font-Poppins font-bold text-green-200 mb-10 text-center">
             Meet Our Speakers

@@ -28,7 +28,7 @@ export default function TETICourseBenefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343] text-center">
-                                    Penjelasan secara lebih mendetail tentang departemen teknik elektro dan teknologi informasi.
+                                    Webinar dan pelatihan diselenggarakan secara gratis.
                                 </p>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export default function TETICourseBenefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343]  text-center">
-                                    Pengalaman bermanfaat untuk mempersiapkan dunia perkuliahan secara lebih awal.
+                                    <i>Skillset</i> IT sangat dibutuhkan dan dicari pada zaman sekarang.
                                 </p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export default function TETICourseBenefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343] text-center">
-                                    “ Establish ourselves as a reliable medium between the demand side and the supply side of the real estate industry ” one-stop
+                                    Pengisi materi merupakan sosok yang ahli di bidangnya.
                                 </p>
                             </div>
                         </div>

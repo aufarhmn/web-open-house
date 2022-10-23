@@ -14,7 +14,7 @@ const shadow2 = {
     boxShadow: "inset -11.7839px -11.7839px 29.4597px #FFFFFF, inset 11.7839px 11.7839px 29.4597px #CDCDCD"
 }
 
-export default function Benefits() {
+export default function TETIFairBenefits() {
     return(
         <div className="w-[100%] h-full px-16 py-36 md:py-72">
             <div className="grid container mx-auto">
@@ -28,7 +28,7 @@ export default function Benefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343] text-center">
-                                    Mendapatkan pengalaman mengikuti perkuliahan di DTETI
+                                    Mengetahui berbagai macam laboratorium yang ada pada gedung DTETI FT UGM.
                                 </p>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export default function Benefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343]  text-center">
-                                    Merasakan perkuliahan berstandar internasional ABET yang dimiliki DTETI
+                                    Menambah pengetahuan tentang Unit Kegiatan Mahasiswa (UKM) dan berbagai macam Team yang dapat diikuti atau dimasuki oleh mahasiswa TETI.
                                 </p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export default function Benefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343] text-center">
-                                    Mengenal dosen-dosen yang ada di DTETI FT UGM
+                                    DTETI FT UGM sudah mengadopsi kurikulum internasional dari IABEE.
                                 </p>
                             </div>
                         </div>

@@ -6,7 +6,7 @@ export default function Objective({
 }) {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-[20px] md:gap-[88px] mt-[60px] md:mt-[50px]">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-[20px] md:gap-[88px] mt-[60px] md:mt-[50px]" data-aos="zoom-in-up" data-aos-duration="2000">
                 <div className="relative w-[144px] h-[144px]">
                     <Image src={imgSrc} layout="fixed"></Image>
                 </div>

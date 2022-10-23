@@ -42,19 +42,15 @@ export default function TETICourse() {
                     </h4>
                     <Objective
                         imgSrc={podium}
-                        body="Introducing to you a UI & UX focused website with a cutting edge technology as a platform for
-                            digital marketing and lead generation."
+                        body="Peserta dapat menguasai dasar-dasar dari robotik, Website Development, atau UI/UX"
                     />
                     <Objective
                         imgSrc={love}
-                        body="Establishing the first stepping stone in the micro markets of Navi Mumbai, and later leaving
-                        footprints as a standard bearer in the micro markets of Mumbai. We strive to always have a
-                        dedicated focus on the consumer's requirements and expectations"
+                        body="Peserta dapat membuat program atau output sederhana setelah mengikuti TETI Course"
                     />
                     <Objective
                         imgSrc={orang}
-                        body="We believe in long term orientation with our diversified business model thus making us stand out
-                        in the industry"
+                        body="Meningkatkan minat siswa dalam mengasah dan mengeksplorasi digital skills"
                     />
                 </div>
             </section>
