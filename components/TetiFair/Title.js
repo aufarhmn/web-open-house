@@ -6,7 +6,7 @@ export default function Title() {
             <div className="grid container mx-auto">
                 <div className="h-[80vh] flex items-center justify-center md:h-[auto] md:justify-start md:my-[120px] md:mx-[50px] lg:mx-[100px] 2xl:mx-[100px]" data-aos="fade-up" data-aos-duration="2000">
                     <h1 className="md:text-[134px] text-[72px] font-bold text-[#93DDDE] font-Josefin text-center md:text-left">
-                        TETI Fair
+                        TETI Talk
                     </h1>
                 </div>
                 <div className="flex flex-col w-full lg:flex-row" data-aos="fade-up" data-aos-duration="2000">
@@ -15,7 +15,7 @@ export default function Title() {
                             About TETI
                             <br/>
                             <div className="lg:w-[250px] lg:h-[80px] bg-[#E7FFC1]" style={{clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)"}}>
-                                <p className="text-center">Fair</p>
+                                <p className="text-center">Talk</p>
                             </div>
                         </h2>
                     </div>

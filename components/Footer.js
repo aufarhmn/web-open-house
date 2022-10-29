@@ -49,11 +49,11 @@ export default function Footer() {
                             TETI Course
                         </Link>
                     </h5>
-                    <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
+                    {/* <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
                         <Link href="/teticlass">
                             TETI Class
                         </Link>
-                    </h5>
+                    </h5> */}
                     <h5 className="text-[18px] cursor-pointer md:text-left text-center hover:text-white transition duration-200 ease-in-out">
                         <Link href="/tetitalk">
                             TETI Talk

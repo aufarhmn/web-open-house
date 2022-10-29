@@ -18,16 +18,16 @@ import { Keyboard, Pagination } from 'swiper'
 const cards = [
   {
     name: 'TETI Fair',
-    desc: 'Kegiatan berupa webinar yang bertujuan untuk mengenalkan lebih jauh segala sesuatu tentang DTETI.',
+    desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
     logo: FireLogo,
     path: '/tetifair',
   },
-  {
-    name: 'TETI Class',
-    desc: 'Kegiatan berupa online class mengenai salah satu mata kuliah di DTETI, yang akan diampu oleh salah satu dosen DTETI.',
-    logo: ArcheryTarget,
-    path: '/teticlass',
-  },
+  // {
+  //   name: 'TETI Class',
+  //   desc: 'Kegiatan berupa online class mengenai salah satu mata kuliah di DTETI, yang akan diampu oleh salah satu dosen DTETI.',
+  //   logo: ArcheryTarget,
+  //   path: '/teticlass',
+  // },
   {
     name: 'TETI Course',
     desc: 'Kegiatan berupa pembelajaran dengan pilihan course yang berkaitan dengan skill-skill yang terkait dengan DTETI.',
@@ -36,7 +36,7 @@ const cards = [
   },
   {
     name: 'TETI Talk',
-    desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
+    desc: 'Kegiatan berupa webinar yang bertujuan untuk mengenalkan lebih jauh segala sesuatu tentang DTETI.',
     logo: MicLogo,
     path: '/tetitalk',
   },
