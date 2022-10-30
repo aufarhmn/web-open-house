@@ -12,7 +12,7 @@ import funfacts from './funfacts.json'
 // TODO: Dynamic Pagination
 export default function FunFacts() {
   return (
-    <section id="funfact">
+    <section id="funfact" className="px-3 sm:px-5">
       <h2
         className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93DDDE] text-[35px] md:text-[45px] max-w-[630px]"
         data-aos="fade-up"
@@ -39,7 +39,10 @@ export default function FunFacts() {
         >
           {funfacts['funfacts'].map((funfact, index) => {
             return (
-              <SwiperSlide className="min-h-[550px] sm:min-h-[400px] p-5 flex items-center justify-center" key={index}>
+              <SwiperSlide
+                className="min-h-[400px] p-5 flex items-center justify-center"
+                key={index}
+              >
                 <div className="cursor-grab text-center">
                   <h2 className="text-3xl font-Josefin font-semibold mb-5">
                     {funfact.title}
