@@ -83,7 +83,6 @@ const Form = () => {
                         >
                             <option value="" disabled selected hidden className="text-grey-400">Select Event</option>
                             <option value="TETI Fair">TETI Fair</option>
-                            <option value="TETI Class">TETI Class</option>
                             <option value="TETI Talk">TETI Talk</option>
                             <option value="TETI Course - Web Dev">TETI Course - Website Development</option>
                             <option value="TETI Course - UI/UX">TETI Course - UI/UX</option>

@@ -18,16 +18,16 @@ import { Keyboard, Pagination } from 'swiper'
 const cards = [
   {
     name: 'TETI Fair',
-    desc: 'Kegiatan berupa webinar yang bertujuan untuk mengenalkan lebih jauh segala sesuatu tentang DTETI.',
+    desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
     logo: FireLogo,
     path: '/tetifair',
   },
-  {
-    name: 'TETI Class',
-    desc: 'Kegiatan berupa online class mengenai salah satu mata kuliah di DTETI, yang akan diampu oleh salah satu dosen DTETI.',
-    logo: ArcheryTarget,
-    path: '/teticlass',
-  },
+  // {
+  //   name: 'TETI Class',
+  //   desc: 'Kegiatan berupa online class mengenai salah satu mata kuliah di DTETI, yang akan diampu oleh salah satu dosen DTETI.',
+  //   logo: ArcheryTarget,
+  //   path: '/teticlass',
+  // },
   {
     name: 'TETI Course',
     desc: 'Kegiatan berupa pembelajaran dengan pilihan course yang berkaitan dengan skill-skill yang terkait dengan DTETI.',
@@ -36,7 +36,7 @@ const cards = [
   },
   {
     name: 'TETI Talk',
-    desc: 'Kegiatan berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman.',
+    desc: 'Kegiatan berupa webinar yang bertujuan untuk mengenalkan lebih jauh segala sesuatu tentang DTETI.',
     logo: MicLogo,
     path: '/tetitalk',
   },
@@ -50,17 +50,14 @@ const buttonShadow = {
   boxShadow: '-10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0,0, 0.08)',
 }
 const cardShadow = {
-  boxShadow: '-20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2',
+  boxShadow: '-10px -10px 30px #FFFFFF, 10px 10px 30px #D2D2D2',
 }
 
 export default function OHEvents() {
   return (
-    <main
-      className="max-w-[1638px] font-Poppins mediumscreen overflow-x-hidden"
-      id="events"
-    >
+    <main className="mx-auto font-Poppins overflow-x-hidden" id="events">
       <h1
-        className="text-5xl font-bold mb-[50px] mt-20 text-[#505050]"
+        className="text-5xl font-bold mb-0 sm:mb-10 text-[#505050] text-center"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -68,57 +65,56 @@ export default function OHEvents() {
       </h1>
       <Swiper
         modules={[Pagination, Keyboard]}
+        className="max-w-[1280px]"
         pagination={{
           dynamicBullets: true,
         }}
-        keyboard={{
-          enabled: true,
-        }}
-        grabCursor={true}
-        slidesPerView={1.1}
-        spaceBetween={2}
+        keyboard={{ enabled: true }}
+        grabCursor="true"
+        slidesPerView={1}
         breakpoints={breakpoints}
       >
         {cards.map((card) => {
           const { name, logo, desc, path } = card
           return (
-            <SwiperSlide key={name} className="pt-7 pb-20">
-              {({ isActive }) => (
-                <div
-                  className="ml-4 last:mr-3 h-[460px] max-w-[334px] rounded-[42px] bg-[#F3F3F3] py-9 px-9 cursor-grab"
-                  style={cardShadow}
-                  data-aos="zoom-in-up"
-                  data-aos-duration="2000"
-                >
-                  <div className="card flex flex-col items-center gap-y-12">
-                    <Image src={logo} alt={`${name} logo`} />
-                    <div>
-                      <p className="mb-1 max-w-[245px] text-center text-sm leading-6 line-clamp-4">
-                        {desc}
+            <SwiperSlide
+              key={name}
+              className="py-10 flex flex-col items-center"
+            >
+              <div
+                className={`h-[460px] w-[90%] max-w-[350px] rounded-[42px] bg-[#F3F3F3] py-9 ${
+                  name === 'TETI Talk' ? 'sm:px-9 px-5' : 'px-5'
+                } cursor-grab`}
+                style={cardShadow}
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
+                <div className="card flex flex-col items-center gap-y-8">
+                  <Image src={logo} alt={`${name} logo`} />
+                  <p className="text-center text-[#505050] text-md font-light leading-6 line-clamp-4">
+                    {desc}
+                  </p>
+                  <h1 className="text-center text-2xl font-semibold text-[#505050] font-Josefin leading-7">
+                    {name}
+                  </h1>
+                  <Link href={path}>
+                    <div
+                      className="bg-[#F9F9F9] rounded-[42.5px] h-[66.05px] w-60 sm:w-64 flex items-center justify-between first-letter:cursor-pointer"
+                      style={buttonShadow}
+                    >
+                      <p className="ml-auto mr-3 text-[#93DDDE] sm:text-lg tracking-widest font-bold">
+                        View Details
                       </p>
-                      <h1 className="text-center text-lg font-semibold text-[#505050] leading-7">
-                        {name}
-                      </h1>
-                    </div>
-                    <Link href={path}>
                       <div
-                        className="bg-[#F9F9F9] rounded-[42.5px] h-[66.05px] w-64  flex items-center justify-between cursor-pointer"
-                        style={buttonShadow}
+                        style={shadow}
+                        className="h-[66.05px] w-[66.05px] rounded-[42.5px] flex justify-center"
                       >
-                        <p className="ml-auto mr-3 text-[#93DDDE] text-lg tracking-widest font-bold">
-                          View Details
-                        </p>
-                        <div
-                          style={shadow}
-                          className="h-[66.05px] w-[66.05px] rounded-[42.5px] flex justify-center"
-                        >
-                          <Image src={BtnDown} alt="view detail button" />
-                        </div>
+                        <Image src={BtnDown} alt="view detail button" />
                       </div>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
-              )}
+              </div>
             </SwiperSlide>
           )
         })}
@@ -128,31 +124,19 @@ export default function OHEvents() {
 }
 
 const breakpoints = {
-  460: {
-    slidesPerView: 1.25,
-  },
-  556: {
+  558: {
     slidesPerView: 1.5,
   },
-  642: {
-    slidesPerView: 1.75,
+  678: {
+    slidesPerView: 2,
   },
-  718: {
-    slidesPerView: 2.05,
-  },
-  882: {
+  768: {
     slidesPerView: 2.25,
   },
-  1075: {
+  954: {
     slidesPerView: 2.5,
   },
-  1172: {
-    slidesPerView: 2.75,
-  },
-  1378: {
-    slidesPerView: 3.25,
-  },
-  1638: {
-    slidesPerView: 3.5,
+  1028: {
+    slidesPerView: 3,
   },
 }
