@@ -1,9 +1,10 @@
-import { addDoc, collection } from "firebase/firestore";
+import { getDocs, addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { db } from "../firebase/firebase.js";
 import { useState } from "react";
 import { FormPopUp } from "./FormPopUp.js";
 import { FaSpinner } from "react-icons/fa";
+import { useEffect } from "react";
 
 const Form = () => {
     const [name, setName] = React.useState("");
@@ -12,6 +13,7 @@ const Form = () => {
     const [showPopUp, setShowPopUp] = useState(false);
     const [submitError, setSubmitError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [getAllData, setGetAllData] = useState(true);
     const dbReff = collection(db, "form-data");
 
     const handleSubmit = (e) => {
@@ -36,6 +38,35 @@ const Form = () => {
         setEmail("");
         setEvent("");
     };
+
+    const limitForm = async () => {
+        const getAllDocs = await getDocs(collection(db, "form-data"));
+        var allData = getAllDocs.docs.map((doc) => doc.data());
+        setGetAllData(allData);
+        var webDevCount = 0, uiuxCount = 0;
+        for(var i = 0; i < allData.length; i++){
+            if(allData[i].event === "TETI Course - Web Dev"){
+                webDevCount++;
+            }
+            if(allData[i].event === "TETI Course - UI/UX"){
+                uiuxCount++;
+            }
+        }
+        if(webDevCount >= 34){
+            document.getElementById("WebDev").disabled = true;
+        }
+        if(uiuxCount >= 24){
+            document.getElementById("UIUX").disabled = true;
+        }
+    }
+
+
+    useEffect(() => {
+        if (getAllData === true) {
+            limitForm();
+            setGetAllData(false);
+        }
+    }, [getAllData]);
 
     const closePopUp = () => {
         setShowPopUp(false);
@@ -84,8 +115,8 @@ const Form = () => {
                             <option value="" disabled selected hidden className="text-grey-400">Select Event</option>
                             <option value="TETI Fair">TETI Fair</option>
                             <option value="TETI Talk">TETI Talk</option>
-                            <option value="TETI Course - Web Dev">TETI Course - Website Development</option>
-                            <option value="TETI Course - UI/UX">TETI Course - UI/UX</option>
+                            <option value="TETI Course - Web Dev" id="WebDev">TETI Course - Website Development</option>
+                            <option value="TETI Course - UI/UX" id="UIUX">TETI Course - UI/UX</option>
                             <option value="TETI Course - Robotika">TETI Course - Robotika</option>
                         </select>
                         <p className="text-white font-Montserrat mt-7 md:text-left text-center">
