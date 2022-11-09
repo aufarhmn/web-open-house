@@ -1,6 +1,6 @@
 import { getDocs, addDoc, collection } from "firebase/firestore";
 import Image from "next/image";
-import React from "react";
+import React, { lazy } from "react";
 import { db } from "../firebase/firebase.js";
 import { useState } from "react";
 import { FormPopUp } from "./FormPopUp.js";
@@ -8,6 +8,7 @@ import { FaSpinner } from "react-icons/fa";
 import { useEffect } from "react";
 
 import VectorImg from "../Assets/Images/Group 254.png"
+import { Lazy } from "swiper";
 
 const Form = () => {
     const [name, setName] = React.useState("");
@@ -91,7 +92,7 @@ const Form = () => {
                     data-aos="fade-up" 
                     data-aos-duration="2000" 
                 >
-                    <div id=" " className="flex gap-x-10 p-10 sm:p-20 lg:px-14 py-14">
+                    <div id=" " className="flex gap-x-10 p-10 sm:p-20 lg:p-14 xl:py-20">
                         <div 
                             className="w-full grid content-end"
                             style={{
@@ -154,7 +155,7 @@ const Form = () => {
                                         If you want to choose multiple events, please fill this form multiple times.
                                     </p>
                                 </div>
-                                <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-white hover:text-white bg-blue-25 hover:bg-green-300 rounded-xl text-xl lg:text-2xl font-bold font-Montserrat duration-200">
+                                <button type="submit" className="mt-10 h-14 w-1/2 md:w-2/5 lg:w-1/2 2xl:w-2/5 p-auto text-white hover:text-white bg-blue-25 hover:bg-green-300 rounded-xl text-xl xl:text-2xl font-bold font-Montserrat duration-200">
                                     {isLoading ? <FaSpinner className="animate-spin mx-auto" /> : "Submit"}
                                 </button>              
                             </form>
