@@ -80,7 +80,11 @@ const Form = () => {
         <>
         <div className="px-7 md:px-16 pt-28 pb-48">
             <div className="grid md:container mx-auto">
-                <h2 className="font-Poppins pb-16 text-center text-[40px] leading-tight sm:text-5xl sm:leading-tight font-bold text-blue-25" data-aos="fade-up" data-aos-duration="2000">
+                <h2 
+                    className="font-Poppins pb-16 text-center text-[40px] leading-tight sm:text-5xl sm:leading-tight font-bold text-blue-25" 
+                    data-aos="fade-up" 
+                    data-aos-duration="2000"
+                >
                     Register Here!
                 </h2>
                 <div
@@ -92,9 +96,9 @@ const Form = () => {
                     data-aos="fade-up" 
                     data-aos-duration="2000" 
                 >
-                    <div id=" " className="flex gap-x-10 p-10 sm:p-20 lg:p-14 xl:py-20">
+                    <div id=" " className="w-full lg:flex lg:justify-center lg:gap-x-10 p-10 sm:p-14 lg:p-14 xl:py-20">
                         <div 
-                            className="w-full grid content-end"
+                            className="hidden lg:grid w-full content-end"
                             style={{
                                 transform: "translate(0%, -20%)",
                                 width: "80%"
@@ -107,11 +111,9 @@ const Form = () => {
                             />
                         </div>
                         <div
-                            style={{
-                                width: "50%"
-                            }}
+                            className="w-full lg:w-2/4 grid justify-items-center"
                         >
-                            <p className="text-5xl text-{#525252} font-Josefin">
+                            <p className="text-[35px] sm:text-[40px] lg:text-5xl leading-tight text-[#525252] font-Josefin">
                                 Register yourself for the amazing thing ahead
                             </p>
                             <form onSubmit={ handleSubmit } className="grid justify-items-center lg:justify-items-start">
