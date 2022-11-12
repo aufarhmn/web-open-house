@@ -50,14 +50,14 @@ const buttonShadow = {
   boxShadow: '-10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0,0, 0.08)',
 }
 const cardShadow = {
-  boxShadow: '-10px -10px 30px #FFFFFF, 10px 10px 30px #D2D2D2',
+  boxShadow: '-15px -15px 25px #FFFFFF, 15px 15px 25px #D2D2D2',
 }
 
 export default function OHEvents() {
   return (
     <main className="mx-auto font-Poppins overflow-x-hidden" id="events">
       <h1
-        className="text-5xl font-bold mb-0 sm:mb-10 text-[#505050] text-center"
+        className="text-5xl font-bold mb-0 text-[#93ddde] text-center"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -69,6 +69,8 @@ export default function OHEvents() {
         pagination={{
           dynamicBullets: true,
         }}
+        centeredSlides="true"
+        initialSlide={1}
         keyboard={{ enabled: true }}
         grabCursor="true"
         slidesPerView={1}
@@ -79,11 +81,11 @@ export default function OHEvents() {
           return (
             <SwiperSlide
               key={name}
-              className="py-10 flex flex-col items-center"
+              className="py-20 flex flex-col items-center"
             >
               <div
-                className={`h-[460px] w-[90%] max-w-[350px] rounded-[42px] bg-[#F3F3F3] py-9 ${
-                  name === 'TETI Talk' ? 'sm:px-9 px-5' : 'px-5'
+                className={`h-[460px] w-[90%] max-w-[358px] rounded-[42px] bg-[#F3F3F3] py-9 ${
+                  name === 'TETI Talk' ? 'sm:px-[44px] px-9' : 'px-5 md:px-7'
                 } cursor-grab`}
                 style={cardShadow}
                 data-aos="zoom-in-up"
@@ -102,7 +104,7 @@ export default function OHEvents() {
                       className="bg-[#F9F9F9] rounded-[42.5px] h-[66.05px] w-60 sm:w-64 flex items-center justify-between first-letter:cursor-pointer"
                       style={buttonShadow}
                     >
-                      <p className="ml-auto mr-3 text-[#93DDDE] sm:text-lg tracking-widest font-bold">
+                      <p className="ml-auto mr-4 text-[#94d9da] sm:text-lg tracking-widest font-bold">
                         View Details
                       </p>
                       <div
@@ -125,13 +127,10 @@ export default function OHEvents() {
 
 const breakpoints = {
   558: {
-    slidesPerView: 1.5,
+    slidesPerView: 1.75,
   },
-  678: {
+  787: {
     slidesPerView: 2,
-  },
-  768: {
-    slidesPerView: 2.25,
   },
   954: {
     slidesPerView: 2.5,

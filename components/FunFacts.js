@@ -9,19 +9,23 @@ import 'swiper/css/pagination'
 
 import funfacts from './funfacts.json'
 
-// TODO: Dynamic Pagination
+const cardShadow = {
+  boxShadow: '-10px -10px 20px #FFFFFF, 10px 10px 20px #D2D2D2',
+}
+
 export default function FunFacts() {
   return (
-    <section id="funfact" className="px-3 sm:px-5">
+    <section id="funfact" className="px-3 sm:px-5 pb-40">
       <h2
-        className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93DDDE] text-[35px] md:text-[45px] max-w-[630px]"
+        className="text-center px-5 mx-auto font-Poppins font-semibold text-[#93ddde] text-[35px] md:text-[45px] max-w-[630px]"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
         Some random fun facts about our department
       </h2>
       <div
-        className="overflow-x-hidden max-w-5xl mx-auto mt-10 mb-20 border-4 sm:border-8 border-[#2FA4FF] rounded-[40px] bg-gray-100"
+        className="overflow-x-hidden max-w-5xl mx-auto mt-20 border-4 sm:border-8 border-[#2FA4FF] rounded-[40px] bg-gray-100"
+        style={cardShadow}
         data-aos="fade-up"
         data-aos-duration="2000"
       >
