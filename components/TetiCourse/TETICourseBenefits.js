@@ -28,7 +28,7 @@ export default function TETICourseBenefits() {
                             </div>
                             <div className="w-[80%] h-[50%] flex justify-center items-center">
                                 <p className="font-Josefin text-[#434343] text-center">
-                                    Webinar dan pelatihan diselenggarakan secara gratis.
+                                    Pelatihan yang diselenggarakan secara gratis.
                                 </p>
                             </div>
                         </div>

@@ -28,7 +28,7 @@ export const FormPopUp = (props) => {
 
   if (show) {
     return (
-      <div className="h-screen bg-slate-900 z-10 fixed top-0 w-full left-0 bg-opacity-80 flex justify-center items-center">
+      <div className="h-full bg-slate-900 z-10 fixed top-0 w-full left-0 bg-opacity-80 flex justify-center items-center">
         <div className="w-full mx-[5%] sm:w-[80%] md:w-[60%] lg:w-[40%] bg-white text-xl rounded overflow-hidden">
           <div className="bg-blue-500 py-2 w-full flex justify-end pr-5 text-white">
             <div

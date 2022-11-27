@@ -65,7 +65,7 @@
   .swiper-button-prev {
     visibility: visible;
   }
-  #funfact.swiper-pagination {
+  .swiper-pagination {
     visibility: hidden;
   }
 }

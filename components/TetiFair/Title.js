@@ -19,8 +19,8 @@ export default function Title() {
                             </div>
                         </h2>
                     </div>
-                    <div className="h-[60%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
-                        <p className="w-[90%]">Kegiatan webinar yang akan mengenalkan lebih jauh Departemen Teknik Elektro dan Teknologi Informasi mulai dari program studinya sampai kegiatan kemahasiswaan</p>
+                    <div className="h-[70%] lg:w-[60%] flex justify-center my-[24px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
+                        <p className="w-[90%]">Berbincang bersama dosen - dosen DTETI FT UGM untuk mengenal lebih jauh tentang Departemen Teknik Elektro dan Teknologi Informasi mulai dari program studi hingga kegiatan kemahasiswaan. Selain itu, akan ada juga talkshow dengan alumni-alumni DTETI UGM untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus</p>
                     </div>
                 </div>
             </div>

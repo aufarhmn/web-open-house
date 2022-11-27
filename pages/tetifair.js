@@ -51,8 +51,8 @@ export default function TETIFair() {
                             </div>
                         </h2>
                     </div>
-                    <div className="h-[60%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
-                        <p className="w-[90%]">Acara berupa talkshow yang akan mengundang alumni-alumni DTETI untuk berbincang bersama, berbagi insight serta pengalaman mereka setelah lulus.</p>
+                    <div className="h-[70%] lg:w-[60%] flex justify-center my-[36px] lg:my-0 font-Poppins text-[24px] md:text-[30px]  text-justify">
+                        <p className="w-[90%]">Pameran yang berisi team dalam lingkup fakultas teknik yang dapat diikuti ketika kamu menjadi salah satu mahasiswa DTETI dan juga kumpulan Badan Semi Otonom yang berada di bawah naungan KMTETI UGM.</p>
                     </div>
                 </div>
         <TETITalkBenefits />
